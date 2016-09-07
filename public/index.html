@@ -1,22 +1,42 @@
 <html>
     <head>
         <title>Places — лучшие места на планете</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/main-style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <meta charset="utf-8">
     </head>
     <body>
-        <div class="container">
-            <header>
-                <img src="">
+        <div id="main-container">
+            <header class="header">
+                <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2.png"></a>
                 <nav>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="header">
+                        <li class="header"><a href="index.html">Главная</a></li>
+                        <li>
+                            <a href="#">Места</a>
+                            <ul>
+                                <li><a href="#">Австралия и Океания</a></li>
+                                <li><a href="#">Азия</a></li>
+                                <li><a href="#">Антарктида</a></li>
+                                <li><a href="#">Африка</a></li>
+                                <li><a href="#">Европа</a></li>
+                                <li><a href="#">Севрная Америка</a></li>
+                                <li><a href="#">Южная Америка</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Статьи</a></li>
                     </ul>
                 </nav>
+                <form action="#" class="search-form" method="GET">
+                    <input type="text" name="search-box" placeholder="Поиск замечательных мест">
+                    <button type="button">Искать</button>
+                </form>
+                <a href="#" class="btn">
+                    Войти
+                </a>
+                <a href="#"><img class="header__scl-media-btn" src="http://core1.staticworld.net/images/article/2013/04/facebook_home_logo_580-100034106-large.jpg" alt="Поделиться в Facebook"></a>
+                <a href="#"><img class="header__scl-media-btn" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png" alt="Поделиться в Twitter"></a>
+                <a href="#"><img class="header__scl-media-btn" src="http://zebraptz.ru/img/social/b_vk.png" alt="Поделиться в VK"></a>                                
             </header>
             <section>
                Some Text

@@ -1,0 +1,18 @@
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#main-container {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+#header__logo {
+    width: 200px;
+}
+.header__scl-media-btn {
+    width: 42px;
+}
