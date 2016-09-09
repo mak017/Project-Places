@@ -10,9 +10,48 @@ nav ul li {
     list-style: none;
     display: inline-block;
 }
+h2 {
+    font-size: 50px;
+}
 #header__logo {
     width: 200px;
 }
 .header__scl-media-btn {
     width: 42px;
+}
+.begin-journey {
+    background-image: url('../images/road-sky-clouds-cloudy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 80%;
+    width: 100%;
+    max-height: 939px;
+    max-width: 1920px;
+    left: 0;
+    right: 0;
+    font-size: 70px;
+    text-align: center;
+    margin-left: 0;
+}
+.begin-journey__content {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 8%;
+}
+.begin-journey__content__btn {
+    font-size: 30px;
+    display: block;
+}
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+.art-box {
+    display: inline-block;
+}
+.art-box__img {
+    width: 400px;
+    height: 300px;
+    display: block;
 }
