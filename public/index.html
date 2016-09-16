@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Places — лучшие места на планете</title>
+        <link rel="shortcut icon" href="images/icon.ico">
         <link rel="stylesheet" href="css/main-style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <meta charset="utf-8">
@@ -9,86 +10,92 @@
     <body>
         <div id="main-container">
             <header class="header">
-                <div class="inline-block">
-                    <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
-                    <nav class="inline-block header__nav">
-                        <ul class="inline-block">
-                            <li class="inline-block header__nav__li"><a class="nav__a" href="index.html">Главная</a></li>
-                            <li class="inline-block header__nav__li">
-                                <a href="#">Места</a>
-                                <ul class="header__nav__drp-dwn-list">
-                                    <li><a href="#">Австралия и Океания</a></li>
-                                    <li><a href="#">Азия</a></li>
-                                    <li><a href="#">Антарктида</a></li>
-                                    <li><a href="#">Африка</a></li>
-                                    <li><a href="#">Европа</a></li>
-                                    <li><a href="#">Северная Америка</a></li>
-                                    <li><a href="#">Южная Америка</a></li>
-                                </ul>
-                            </li>
-                            <li class="inline-block header__nav__li"><a href="#">Статьи</a></li>
-                        </ul>
-                    </nav>
-                    <form action="#" class="inline-block header__search-form" method="GET">
-                        <input type="text" name="search-box" placeholder="Поиск замечательных мест">
-                        <button type="button">Искать</button>
-                    </form>
-                    <a href="#" class="header btn">
-                        Войти
+                <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
+                <nav class="inline-block header__nav">
+                    <ul class="inline-block header__nav">
+                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="index.html">Главная</a></li>
+                        <li class="inline-block header__nav__li header__nav__drp-dwn-list-top">
+                            <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                            <ul class="header__nav__drp-dwn-list_i">
+                                <li><a class="nav__a" href="#">Австралия и Океания</a></li>
+                                <li><a class="nav__a" href="#">Азия</a></li>
+                                <li><a class="nav__a" href="#">Антарктида</a></li>
+                                <li><a class="nav__a" href="#">Африка</a></li>
+                                <li><a class="nav__a" href="#">Европа</a></li>
+                                <li><a class="nav__a" href="#">Северная Америка</a></li>
+                                <li><a class="nav__a" href="#">Южная Америка</a></li>
+                            </ul>
+                        </li>
+                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+                <form action="#" class="inline-block header__search-form" method="GET">
+                    <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
+                    <a href="#">
+                        <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                            <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
+                            C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
+                            c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
+                            c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"/>
+                        </svg>
                     </a>
-                    <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="http://pk.math.msu.ru/sites/default/files/images/Links/Facebook.jpg" alt="Поделиться в Facebook"></a>
-                    <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png" alt="Поделиться в Twitter"></a>
-                    <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="http://zebraptz.ru/img/social/b_vk.png" alt="Поделиться в VK"></a>
-                </div>                             
+                </form>
+                <a href="#" class="btn header__btn">
+                    Войти
+                </a>
+                <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="images/Facebook.jpg" alt="Поделиться в Facebook"></a>
+                <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="images/Twitterbird.png" alt="Поделиться в Twitter"></a>
+                <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="images/b_vk.png" alt="Поделиться в VK"></a>
             </header>
             <section class="begin-journey">
                <div class="begin-journey__content">
                    Мы отобрали для вас лучшие места на планете, которые обязательно стоит посетить
-                   <a href="#" class="begin-journey__content__btn">Начать путешествие</a>
+                   <a href="#" class="btn begin-journey__content__btn">Начать путешествие</a>
                </div>
             </section>
             <section class="map">
-                <h2>Куда бы Вы отправились?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61136490.731508106!2d36.05702214334653!3d20.73152232563811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1473420924857" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h2 class="map">Куда бы Вы отправились?</h2>
+                <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61136490.731508106!2d36.05702214334653!3d20.73152232563811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1473420924857" frameborder="0"  allowfullscreen></iframe>
             </section>
             <section class="main-articles">
                 <h2>Последние статьи</h2>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи1"></a>
-                    <a href="#">Название статьи1</a>
+                    <a class="art__ref" href="#">Название статьи1</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи2"></a>
-                    <a href="#">Название статьи2</a>
+                    <a class="art__ref" href="#">Название статьи2</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи3"></a>
-                    <a href="#">Название статьи3</a>
+                    <a class="art__ref" href="#">Название статьи3</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи4"></a>
-                    <a href="#">Название статьи4</a>
+                    <a class="art__ref" href="#">Название статьи4</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи5"></a>
-                    <a href="#">Название статьи5</a>
+                    <a class="art__ref" href="#">Название статьи5</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи6"></a>
-                    <a href="#">Название статьи6</a>
+                    <a class="art__ref" href="#">Название статьи6</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи7"></a>
-                    <a href="#">Название статьи7</a>
+                    <a class="art__ref" href="#">Название статьи7</a>
                 </div>
                 <div class="art-box">
                     <a href="#"><img class="art-box__img" src="#" alt="Название статьи8"></a>
-                    <a href="#">Название статьи8</a>
+                    <a class="art__ref" href="#">Название статьи8</a>
                 </div>
             </section>
             <section class="subscribe">
-                <h3>Интересны приключения и интересные места в мире? Подпишись на новости сайта</h3>
-                <form action="#" method="POST">
+                <h3>Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
+                <form class="subscribe__form" action="#" method="POST">
                     <input type="email" name="email" placeholder="Введите E-Mail">
                     <button type="submit">Подписаться</button>
                 </form>
