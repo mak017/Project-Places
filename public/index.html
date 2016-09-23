@@ -1,56 +1,68 @@
 <html>
     <head>
         <title>Places — лучшие места на планете</title>
-        <link rel="shortcut icon" href="images/icon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main-style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <meta charset="utf-8">
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="js/share42.js"></script>
+        <script type="text/javascript" src="http://freqdec.github.io/slabText/js/jquery.slabtext.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
         <div id="main-container">
             <header class="header">
-                <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
-                <nav class="inline-block header__nav">
-                    <ul class="inline-block header__nav">
-                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="index.html">Главная</a></li>
-                        <li class="inline-block header__nav__li header__nav__drp-dwn-list-top">
-                            <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
-                            <ul class="header__nav__drp-dwn-list_i">
-                                <li><a class="nav__a" href="#">Австралия и Океания</a></li>
-                                <li><a class="nav__a" href="#">Азия</a></li>
-                                <li><a class="nav__a" href="#">Антарктида</a></li>
-                                <li><a class="nav__a" href="#">Африка</a></li>
-                                <li><a class="nav__a" href="#">Европа</a></li>
-                                <li><a class="nav__a" href="#">Северная Америка</a></li>
-                                <li><a class="nav__a" href="#">Южная Америка</a></li>
-                            </ul>
-                        </li>
-                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="#">Статьи</a></li>
-                    </ul>
-                </nav>
-                <form action="#" class="inline-block header__search-form" method="GET">
-                    <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
-                    <a href="#">
-                        <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
-                            <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
-                            C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
-                            c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
-                            c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"/>
-                        </svg>
+                <div class="header__logo">
+                    <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
+                    <br>
+                    &nbsp;
+                </div>
+                <div class="header__content">
+                    <nav class="inline-block header__nav">
+                        <ul class="inline-block header__nav">
+                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="index.html">Главная</a></li>
+                            <li class="inline-block header__nav__li header__nav__drp-dwn-list-top">
+                                <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                                <ul class="header__nav__drp-dwn-list_i">
+                                    <li><a class="nav__a" href="#">Австралия и Океания</a></li>
+                                    <li><a class="nav__a" href="#">Азия</a></li>
+                                    <li><a class="nav__a" href="#">Антарктида</a></li>
+                                    <li><a class="nav__a" href="#">Африка</a></li>
+                                    <li><a class="nav__a" href="#">Европа</a></li>
+                                    <li><a class="nav__a" href="#">Северная Америка</a></li>
+                                    <li><a class="nav__a" href="#">Южная Америка</a></li>
+                                </ul>
+                            </li>
+                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top" href="#">Статьи</a></li>
+                        </ul>
+                    </nav>
+                    <form action="#" class="inline-block header__search-form" method="GET">
+                        <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
+                        <a href="#">
+                            <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
+                                C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
+                                c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
+                                c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"/>
+                            </svg>
+                        </a>
+                    </form>
+                    <a href="#" class="btn header__btn">
+                        Войти
                     </a>
-                </form>
-                <a href="#" class="btn header__btn">
-                    Войти
-                </a>
-                <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="images/scl-media-icons/Facebook.jpg" alt="Поделиться в Facebook"></a>
-                <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="images/scl-media-icons/Twitterbird.png" alt="Поделиться в Twitter"></a>
-                <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="images/scl-media-icons/b_vk.png" alt="Поделиться в VK"></a>
+                    <div class="inline-block header__scl-media">
+                        <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="images/scl-media-icons/Facebook.jpg" alt="Поделиться в Facebook"></a>
+                        <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="images/scl-media-icons/Twitterbird.png" alt="Поделиться в Twitter"></a>
+                        <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="images/scl-media-icons/b_vk.png" alt="Поделиться в VK"></a>
+                    </div>
+                    
+                </div>
             </header>
             <section class="begin-journey">
                <div class="begin-journey__content">
-                   Мы отобрали для вас лучшие места на планете, которые обязательно стоит посетить
+                   <div class="begin-journey__content__text">Мы отобрали для вас лучшие места на планете, которые обязательно стоит посетить</div>
                    <a href="#" class="btn begin-journey__content__btn">Начать путешествие</a>
                </div>
             </section>
@@ -94,15 +106,19 @@
                 </div>
             </section>
             <section class="subscribe">
-                <h3>Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
-                <form class="subscribe__form" action="#" method="POST">
+                <h3 class="subscribe__text">Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
+                <div class="subscribe__form">
+                    <form action="#" method="POST">
                     <input type="email" name="email" placeholder="Введите E-Mail">
                     <button type="submit">Подписаться</button>
-                </form>
+                    </form>
+                </div>
             </section>
             <footer>
-                <img id="footer__logo" src="images/logo2.png"></a>
-                <nav class="footer__nav">
+                <div class="footer-r1 inline-block">
+                    <img class="inline-block" id="footer__logo" src="images/logo2.png">
+                </div>
+                <nav class="footer__nav inline-block">
                     <ul>
                         <li class="footer__nav__li"><a href="#">О проекте</a></li>
                         <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
@@ -111,9 +127,9 @@
                         <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
                     </ul>
                 </nav>
-                <div class="share42init"></div>
+                <div class="inline-block share42init"></div>
                 <br>
-                <p>© 2016 Денис Маковский</p>
+                <p id="copyright">© 2016 Денис Маковский</p>
             </footer>
         </div>
     </body>
