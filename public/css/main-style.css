@@ -146,8 +146,9 @@ footer {
     position: relative;
 }
 .header__nav__drp-dwn-list_i {
+	  display: none;
     position: absolute;
-    top: -9999px;
+    top: 0;
     background: #fff;
     z-index: 1;
     width: 215px;
@@ -156,7 +157,8 @@ a.header__nav__drp-dwn-list-top {
     padding: 3px 10px 4px;
 }
 .header__nav__drp-dwn-list-top:hover .header__nav__drp-dwn-list_i {
-    top: 30px;
+	  display: block;
+    top: 117%;
     padding: 2px;
 }
 ul.header__nav__drp-dwn-list_i li {
