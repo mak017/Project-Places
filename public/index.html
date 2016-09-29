@@ -1,31 +1,181 @@
 <html>
     <head>
         <title>Places — лучшие места на планете</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/main-style.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <meta charset="utf-8">
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="js/share42.js"></script>
+        <script type="text/javascript" src="http://freqdec.github.io/slabText/js/jquery.slabtext.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <div class="container">
-            <header>
-                <img src="">
-                <nav>
+        <div id="main-container">
+            <header class="header">
+                <div class="header__logo">
+                    <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
+                </div>
+                <div class="header__content">
+                    <nav class="inline-block header__nav">
+                        <ul class="inline-block header__nav">
+                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="index.html">Главная</a></li>
+                            <li class="inline-block header__nav__li header__nav__drp-dwn-list-top1">
+                                <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                                <ul class="header__nav__drp-dwn-list_i1">
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Австралия и Океания</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Австралия</a></li>
+											<li><a class="nav__a" href="#">Новая Зеландия</a></li>
+										</ul>
+									</li>
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Азия</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Индонезия</a></li>
+											<li><a class="nav__a" href="#">Китай</a></li>
+											<li><a class="nav__a" href="#">Таиланд</a></li>
+											<li><a class="nav__a" href="#">Филиппины</a></li>
+											<li><a class="nav__a" href="#">Шри-Ланка</a></li>
+											<li><a class="nav__a" href="#">Япония</a></li>
+										</ul>
+									</li>
+                                    <li><a class="nav__a" href="#">Антарктида</a></li>
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Африка</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Египет</a></li>
+											<li><a class="nav__a" href="#">Кения</a></li>
+											<li><a class="nav__a" href="#">Тунис</a></li>
+											<li><a class="nav__a" href="#">ЮАР</a></li>
+										</ul>
+									</li>
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Европа</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Великобритания</a></li>
+											<li><a class="nav__a" href="#">Германия</a></li>
+											<li><a class="nav__a" href="#">Испания</a></li>
+											<li><a class="nav__a" href="#">Италия</a></li>
+											<li><a class="nav__a" href="#">Франция</a></li>
+											<li><a class="nav__a" href="#">Швейцария</a></li>
+										</ul>
+									</li>
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Северная Америка</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Канада</a></li>
+											<li><a class="nav__a" href="#">Мексика</a></li>
+											<li><a class="nav__a" href="#">США</a></li>
+										</ul>
+									</li>
+                                    <li class="header__nav__drp-dwn-list-top2">
+										<a class="nav__a" href="#">Южная Америка</a>
+										<ul class="header__nav__drp-dwn-list_i2">
+											<li><a class="nav__a" href="#">Аргентина</a></li>
+											<li><a class="nav__a" href="#">Бразилия</a></li>
+											<li><a class="nav__a" href="#">Чили</a></li>
+										</ul>
+									</li>
+                                </ul>
+                            </li>
+                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                        </ul>
+                    </nav>
+                    <form action="#" class="inline-block header__search-form" method="GET">
+                        <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
+                        <a href="#">
+                            <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
+                                C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
+                                c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
+                                c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"/>
+                            </svg>
+                        </a>
+                    </form>
+                    <a href="#" class="btn header__btn">
+                        Войти
+                    </a>
+                    <div class="inline-block header__scl-media">
+                        <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="images/scl-media-icons/Facebook.jpg" alt="Поделиться в Facebook"></a>
+                        <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="images/scl-media-icons/Twitterbird.png" alt="Поделиться в Twitter"></a>
+                        <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="images/scl-media-icons/b_vk.png" alt="Поделиться в VK"></a>
+                    </div>
+                    
+                </div>
+            </header>
+            <section class="begin-journey">
+               <div class="begin-journey__content">
+                   <div class="begin-journey__content__text">Мы отобрали для вас лучшие места на планете, которые обязательно стоит посетить</div>
+                   <a href="#" class="btn begin-journey__content__btn">Начать путешествие</a>
+               </div>
+            </section>
+            <section class="map">
+                <h2 class="map">Куда бы Вы отправились?</h2>
+                <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61136490.731508106!2d36.05702214334653!3d20.73152232563811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1473420924857" frameborder="0"  allowfullscreen></iframe>
+            </section>
+            <section class="main-articles">
+                <h2>Последние статьи</h2>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи1"></a>
+                    <a class="art__ref" href="#">Название статьи1</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи2"></a>
+                    <a class="art__ref" href="#">Название статьи2</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи3"></a>
+                    <a class="art__ref" href="#">Название статьи3</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи4"></a>
+                    <a class="art__ref" href="#">Название статьи4</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи5"></a>
+                    <a class="art__ref" href="#">Название статьи5</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи6"></a>
+                    <a class="art__ref" href="#">Название статьи6</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи7"></a>
+                    <a class="art__ref" href="#">Название статьи7</a>
+                </div>
+                <div class="art-box">
+                    <a href="#"><img class="art-box__img" src="#" alt="Название статьи8"></a>
+                    <a class="art__ref" href="#">Название статьи8</a>
+                </div>
+            </section>
+            <section class="subscribe">
+                <h3 class="subscribe__text">Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
+                <div class="subscribe__form">
+                    <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Введите E-Mail">
+                    <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-r1 inline-block">
+                    <img class="inline-block" id="footer__logo" src="images/logo2.png">
+                </div>
+                <nav class="footer__nav inline-block">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="footer__nav__li"><a href="#">О проекте</a></li>
+                        <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
+                        <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
+                        <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
+                        <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
                     </ul>
                 </nav>
-            </header>
-            <section>
-               Some Text
-            </section>
-            <aside>
-                В разработке
-            </aside>
-            <footer>
-                В разработке
+                <div class="inline-block share42init"></div>
+                <br>
+                <p id="copyright">© 2016 Денис Маковский</p>
             </footer>
         </div>
     </body>
