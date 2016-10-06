@@ -44,39 +44,14 @@ box-sizing: border-box;
     font-family: 'PT Sans', Helvetica, sans-serif;
 }
 body {
+    border: 0 solid rgba(0,0,0,0);
     font-size: 100%;
     margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 a {
     cursor: pointer;
-}
-h2 {
-    color: #204080;
-    font-size: 300%;
-    text-align: center;
-    position: relative;
-}
-h2::before {
-    content: '';
-    background-color: #204080;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    width: 80%;
-}
-h2::after {
-    content: '';
-    background-color: #204080;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: auto;
-    bottom: 0;
-    height: 2px;
-    width: 80%;
 }
 header {
     border-bottom: 1px solid #204080;
@@ -94,6 +69,7 @@ nav a {
 }
 footer {
     background: #A6CAF0;
+    clear: both;
     margin: 0;
     position: relative;
     bottom: 0;
@@ -248,6 +224,7 @@ input.header__search-box:-ms-input-placeholder {text-overflow:ellipsis;}
     width: 42px;
 }
 
+/* MAIN PAGE */
 /* main content */
 
 .begin-journey {
@@ -289,6 +266,35 @@ input.header__search-box:-ms-input-placeholder {text-overflow:ellipsis;}
     margin-top: 20px;
     text-align: center;
     z-index: 20
+}
+.main h1 {
+    color: #204080;
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 1px 1px rgba(255,255,255,.5);
+    position: relative;
+}
+.main h1::before {
+    content: '';
+    background-color: #204080;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 80%;
+}
+.main h1::after {
+    content: '';
+    background-color: #204080;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    height: 2px;
+    width: 80%;
 }
 .map__frame {
     height: 60%;
@@ -364,4 +370,298 @@ input.header__search-box:-ms-input-placeholder {text-overflow:ellipsis;}
 }
 #copyright {
     text-align: center;
+}
+
+/* PLACE PAGE */
+
+.content__header {
+    background: url('../images/content/places/mie/teaser.jpg');
+    background-size: cover;
+    clear: both;
+    height: 50%;
+    padding: 10px 10%;
+    color: white;
+}
+.place h1 {
+    font-size: 300%;
+}
+.place h2 {
+    font-size: 250%;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px
+}
+.breadcrumb>li {
+    display: inline-block
+}
+.breadcrumb a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    color: white;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0"
+}
+.breadcrumb>.active {
+    color: rgba(255,255,255,.5)
+}
+.content__header__place-parent {
+    font-size: 150%;
+}
+.content__right-aside {
+    float: right;
+    margin-right: 5%;
+    padding: 20px;
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+.content__right-aside a {
+    display: block;
+    margin: 20px 5px;
+    color: rgb(0, 127, 127);
+}
+.aside__articles__links {
+    margin: 30px 5px;
+    position: relative;
+}
+.aside__articles__links::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: -40px;
+    height: 1px;
+    width: 90%;
+    background: #ccc;
+}
+.aside__similar-places {
+    margin: 90px;
+}
+.aside__similar-places a {
+    margin-bottom: 30px;
+}
+.aside__similar-places img {
+    display: block;
+    margin: 10px 0;
+    width: 150px;
+}
+.content__main-info {
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+}
+.content__details {
+    float: left;
+}
+a.aside__similar-places__btn {
+    background: rgba(0,0,0,0);
+    border: 1px solid rgb(0, 148, 255);
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    color: rgb(0, 148, 255);
+}
+a.aside__similar-places__btn:hover {
+    background: rgba(0,0,0,0);
+    border: 1px solid #204080;
+    color: #204080;
+}
+.nav {
+    padding-left: 0;
+    list-style: none
+}
+
+.nav>li {
+    position: relative;
+    display: block
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: rgb(0, 148, 255);
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee
+}
+.nav>li>a>img {
+    max-width: none
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0
+}
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent
+}
+.tab-content {
+    margin-bottom: 50px;
+    margin-top: 85px;
+    position: relative;
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+.tab-content>.active {
+    display: block
+}
+.month-blocks {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.segment-graph-item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    width: 7%;
+}
+.segment-graph-item--1 .segment-graph__segment {
+    border-radius: 4px 0 0 4px;
+}
+.segment-graph-item--last .segment-graph__segment {
+    border-radius: 0 4px 4px 0;
+}
+.segment-graph__segment {
+    opacity: 0.9;
+    position: relative;
+    height: 75%;
+}
+.segment-graph__segment--subduedgray {
+    background: #dbe6ec;
+}
+.segment-graph__segment--softgreen {
+    background: #c7e6aa;
+}
+.segment-graph__segment--softblue {
+    background: #8abee5;
+}
+.segment-graph__label {
+    font-size: 13px;
+    font-size: 0.92857rem;
+    color: #99a9b3;
+    height: 25%;
+    font-weight: bold;
+    text-align: center;
+}
+.copy--h4 {
+    font-size: 16px;
+    font-size: 1.14286rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: #297CBB;
+}
+.climate--map--portrait .seasonal__col-header {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.seasonal__col-header:before {
+    height: 14px;
+    width: 14px;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.seasonal__col-header--low:before {
+    background: #dbe6ec;
+}
+.seasonal__col-header--shoulder:before {
+    background: #8abee5;
+}
+.seasonal__col-header--high:before {
+    background: #c7e6aa;
+}
+.what-to-do {
+    position: relative;
+    vertical-align: middle;
+}
+.hor-2 {
+    height: 30%;
+    width: 49%;
+    display: inline-block;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    text-align: center;
+}
+.what-to-do-1 {
+    background: url('../images/content/places/mie/grand-shrine-of-ise_1.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.what-to-do-2 {
+    background: url('../images/content/places/mie/iga045.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.what-to-do-3 {
+    background: url('../images/content/places/mie/meoto-iva-003.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.what-to-do-4 {
+    background: url('../images/content/places/mie/japan.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.what-to-do__txt,
+.what-to-do__txt2,
+.what-to-do__txt3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 0;
+}
+.what-to-do-1:hover .what-to-do__txt,
+.what-to-do-2:hover .what-to-do__txt,
+.what-to-do-3:hover .what-to-do__txt,
+.what-to-do-4:hover .what-to-do__txt {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+.photo img {
+    width: 100%;
+}
+
+.content__details {
+    width: 65%;
 }

@@ -1,0 +1,339 @@
+<html>
+
+<head>
+    <title>Places — лучшие места на планете</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/main-style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../../../node_modules/bootstrap/js/tab.js"></script>
+    <script type="text/javascript" src="../../js/share42.js"></script>
+    <script type="text/javascript" src="http://freqdec.github.io/slabText/js/jquery.slabtext.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+
+<body class="place">
+    <div id="main-container">
+        <header class="header">
+            <div class="header__logo">
+                <a href="../../index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="../../images/logo2_with_title.png"></a>
+            </div>
+            <div class="header__content">
+                <nav class="inline-block header__nav">
+                    <ul class="inline-block header__nav">
+                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="../../index.html">Главная</a></li>
+                        <li class="inline-block header__nav__li header__nav__drp-dwn-list-top1">
+                            <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                            <ul class="header__nav__drp-dwn-list_i1">
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Австралия и Океания</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Австралия</a></li>
+                                        <li><a class="nav__a" href="#">Новая Зеландия</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Азия</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Индонезия</a></li>
+                                        <li><a class="nav__a" href="#">Китай</a></li>
+                                        <li><a class="nav__a" href="#">Таиланд</a></li>
+                                        <li><a class="nav__a" href="#">Филиппины</a></li>
+                                        <li><a class="nav__a" href="#">Шри-Ланка</a></li>
+                                        <li><a class="nav__a" href="#">Япония</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__a" href="#">Антарктида</a></li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Африка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Египет</a></li>
+                                        <li><a class="nav__a" href="#">Кения</a></li>
+                                        <li><a class="nav__a" href="#">Тунис</a></li>
+                                        <li><a class="nav__a" href="#">ЮАР</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Европа</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Великобритания</a></li>
+                                        <li><a class="nav__a" href="#">Германия</a></li>
+                                        <li><a class="nav__a" href="#">Испания</a></li>
+                                        <li><a class="nav__a" href="#">Италия</a></li>
+                                        <li><a class="nav__a" href="#">Франция</a></li>
+                                        <li><a class="nav__a" href="#">Швейцария</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Северная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Канада</a></li>
+                                        <li><a class="nav__a" href="#">Мексика</a></li>
+                                        <li><a class="nav__a" href="#">США</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Южная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Аргентина</a></li>
+                                        <li><a class="nav__a" href="#">Бразилия</a></li>
+                                        <li><a class="nav__a" href="#">Чили</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                    </ul>
+                </nav>
+                <form action="#" class="inline-block header__search-form" method="GET">
+                    <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
+                    <a href="#">
+                        <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                            <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
+                                C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
+                                c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
+                                c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
+                            />
+                        </svg>
+                    </a>
+                </form>
+                <a href="#" class="btn header__btn">
+                        Войти
+                    </a>
+                <div class="inline-block header__scl-media">
+                    <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="../../images/scl-media-icons/Facebook.jpg" alt="Поделиться в Facebook"></a>
+                    <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="../../images/scl-media-icons/Twitterbird.png" alt="Поделиться в Twitter"></a>
+                    <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="../../images/scl-media-icons/b_vk.png" alt="Поделиться в VK"></a>
+                </div>
+
+            </div>
+        </header>
+        <div class="content">
+            <section class="content__header">
+                <ol class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Азия</a></li>
+                    <li><a href="#">Япония</a></li>
+                    <li class="active">Префектура Миэ</li>
+                </ol>
+                <h1>Префектура Миэ</h1>
+                <a class="content__header__place-parent" herf="#">Япония</a>
+            </section>
+            <aside class="content__right-aside">
+                <section class="aside__articles__links">
+                    <h3>Последние статьи</h3>
+                    <a href="#">Интересная статья1</a>
+                    <a href="#">Интересная статья2</a>
+                    <a href="#">Интересная статья3</a>
+                    <a href="#">Интересная статья4</a>
+                </section>
+                <section class="aside__similar-places">
+                    <h3>Похожие места</h3>
+                    <a href="#"><img src="#" alt="Интересное место1">Интересное место1</a>
+                    <a href="#"><img src="#" alt="Интересное место2">Интересное место2</a>
+                    <a href="#"><img src="#" alt="Интересное место3">Интересное место3</a>
+                    <a href="#"><img src="#" alt="Интересное место4">Интересное место4</a>
+                    <a class="btn aside__similar-places__btn" href="#">Еще</a>
+                </section>
+            </aside>
+            <section class="content__main-info">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#main-info" data-toggle="tab">Общая информация</a></li>
+                    <li><a href="#when" data-toggle="tab">Когда посещать</a></li>
+                    <li><a href="#how" data-toggle="tab">Как добраться</a></li>
+                    <li><a href="#hotels" data-toggle="tab">Отели</a></li>
+                    <li><a href="#what-to-do" data-toggle="tab">Чем заняться</a></li>
+                    <li><a href="#photo" data-toggle="tab">Фото</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="main-info">
+                        <article class="tab__main-info">
+                            <h2>Миэ</h2>
+                            <h3>Префектура Японии</h3>
+                            <p>Миэ — префектура, занимающая южную часть полуострова Кии в регионе Кинки острова Хонсю в Японии.
+                                Площадь префектуры составляет 5777,31 км², население — 1 821 554 человека, плотность населения
+                                — 315,29 чел./км². Административный центр — город Цу.</p>
+                            <p><strong>Площадь: </strong>5 777 км²</p>
+                            <p><strong>Столица: </strong>Цу</p>
+                            <p><strong>Население: </strong>1,839 миллиона (31 мар. 2012 г.)</p>
+                            <p><strong>Птица: </strong>Снежный зуёк</p>
+                        </article>
+                    </div>
+                    <div class="tab-pane" id="when">
+                        <div class="month-blocks segment-graph">
+                            <div class="segment-graph-item segment-graph-item--1" |>
+                                <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Янв
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--2" |>
+                                <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Фев
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--3" |>
+                                <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Мар
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--4" |>
+                                <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Апр
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--5" |>
+                                <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Май
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--6" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Июн
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--7" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Июл
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--8" |>
+                                <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Авг
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--9" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Сен
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--10" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Окт
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--11" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Ноя
+                                </div>
+                            </div>
+                            <div class="segment-graph-item segment-graph-item--12 segment-graph-item--last" |>
+                                <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                <div class="segment-graph__label copy--caption">
+                                    Дек
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-wrapper--30">
+                            <div class="col--seasonal seasonal__col">
+                                <h4 class="copy--h4 seasonal__col-header seasonal__col-header--low">
+                                    Низкий поток туризма
+                                    <span class="seasonal__col__time">(Янв–Мар)</span>
+                                </h4>
+                                <p>
+                                    Зима прохладная или холодная на большей части острова Хонсю, но это нормально для путешествий. Будьте готовы к снегу в горах. Многие компании закрываются в период Нового года (конец декабря и начало января).
+                                </p>
+                            </div>
+                            <div class="col--seasonal seasonal__col">
+                                <h4 class="copy--h4 seasonal__col-header seasonal__col-header--shoulder">
+                                    Средний поток туризма
+                                    <span class="seasonal__col__time">(Июн и Июл, Сен–Дек)</span>
+                                </h4>
+                                <p>
+                                    Июнь и июль – сезон дождей в большей части Японии (за исключением Хоккайдо) - дождь не каждый день, но может быть довольно влажно. Осенью (с сентября до середины декабря), как правило, прохладно и ясно.
+                                </p>
+                            </div>
+                            <div class="col--seasonal seasonal__col">
+                                <h4 class="copy--h4 seasonal__col-header seasonal__col-header--high">
+                                    Высокий поток туризма
+                                    <span class="seasonal__col__time">(Апр и Май, Авг)</span>
+                                </h4>
+                                <p>
+                                    Полеты стоят дорого во время Золотой недели (в начале мая), О-Бон (середина августа) и Новыого года. В городах острова Хонсю цветет вишня (в конце марта по начало апреля) и осенью опадает листва (ноябрь).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="how">
+                        <p>Миэ находится в четырех часах езды от Токио на скоростном поезде.</p>
+                        <p>Вы можете добраться до префектуры Миэ, прилетев в (Центрэйр) Международный аэропорт Чубу или международный аэропорт Кансай.</p>
+                        <p>Вы можете добраться до столицы префектуры Ми, Цу, примерно за 45 минут, или до Мацузаки примерно за 75 минут на скоростном катере от Чубу (Центрэйр) аэропорта.</p>
+                    </div>
+                    <div class="tab-pane" id="hotels">
+                        <ul>
+                            <li>Hotel Hamarikyu 3*</li>
+                            <li>Hotel Maritaime Kaikoen Kifuka</li>
+                            <li>Hotel Green Park Suzuka 3*</li>
+                            <li>Ama no Shima</li>
+                            <li>Green Park Tsu 4*</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane what-to-do" id="what-to-do">
+                        <div class="hor-2 what-to-do-1">
+                            <div class="what-to-do__txt">
+                                Посетить храм Исэ
+                            </div>
+                        </div>
+                        <div class="hor-2 what-to-do-2">
+                            <div class="what-to-do__txt">
+                                Побывать в самом знаменитом музее ниндзя в Ига-Уэно
+                            </div>
+                        </div>
+                        <div class="hor-2 what-to-do-3">
+                            <div class="what-to-do__txt">
+                                Взобраться на "скалы-супруги" Мэото Ива
+                            </div>
+                        </div>
+                        <div class="hor-2 what-to-do-4">
+                            <div class="what-to-do__txt">
+                                Посмотреть гонку Формулы&#160;1 на автодроме Судзука
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane photo" id="photo">
+                        <img src="../../images/content/places/mie/prefecture_mie_top.jpg">
+                        <img src="../../images/content/places/mie/0_1174d7_d3aef510_orig.jpg">
+                        <img src="../../images/content/places/mie/ago-bay-at-sunset--mie-prefecture--japan.jpg">
+                        <img src="../../images/content/places/mie/photo.jpg">
+                    </div>
+                </div>
+            </section>
+            <section class="content__details">
+                <div class="map">                                                
+                    <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841856.4437478939!2d136.42028255!3d34.49016234999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60043df54a474163%3A0x429e72fe7d388728!2z0JzQuNGNLCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1416939895820" frameborder="0" allowfullscreen></iframe>                        
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-r1 inline-block">
+                <img class="inline-block" id="footer__logo" src="../../images/logo2.png">
+            </div>
+            <nav class="footer__nav inline-block">
+                <ul>
+                    <li class="footer__nav__li"><a href="#">О проекте</a></li>
+                    <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
+                    <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
+                    <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
+                    <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
+                </ul>
+            </nav>
+            <div class="inline-block share42init"></div>
+            <br>
+            <p id="copyright">© 2016 Денис Маковский</p>
+        </footer>
+    </div>
+</body>
+
+</html>
