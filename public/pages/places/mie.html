@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="../../css/main-style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../../../Bootstrap-3-Typeahead-master/bootstrap3-typeahead.js"></script>
     <script type="text/javascript" src="../../../node_modules/bootstrap/js/tab.js"></script>
+    <script type="text/javascript" src="../../../node_modules/bootstrap/js/transition.js"></script>
     <script type="text/javascript" src="../../js/share42.js"></script>
-    <script type="text/javascript" src="http://freqdec.github.io/slabText/js/jquery.slabtext.min.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
 </head>
 
@@ -87,7 +89,7 @@
                     </ul>
                 </nav>
                 <form action="#" class="inline-block header__search-form" method="GET">
-                    <input class="header__search-box" type="text" name="search-box" placeholder="Поиск замечательных мест">
+                    <input class="header__search-box" type="text"  data-provide="typeahead" name="search-box" placeholder="Поиск замечательных мест">
                     <a href="#">
                         <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
@@ -120,22 +122,29 @@
                 </ol>
                 <h1>Префектура Миэ</h1>
                 <a class="content__header__place-parent" herf="#">Япония</a>
+                <div class="content__header__images">
+                    
+                </div>
             </section>
             <aside class="content__right-aside">
                 <section class="aside__articles__links">
                     <h3>Последние статьи</h3>
-                    <a href="#">Интересная статья1</a>
-                    <a href="#">Интересная статья2</a>
-                    <a href="#">Интересная статья3</a>
-                    <a href="#">Интересная статья4</a>
+                    <a href="#">12 лучших мест для дайвинга в Красном море</a>
+                    <a href="#">Куда отправиться в зимнюю сказку: 6 мест, где зима – в удовольствие</a>
+                    <a href="#">Куда поехать в октябре и где можно купаться в это время года</a>
+                    <a href="#">Немного об Измире</a>
                 </section>
-                <section class="aside__similar-places">
-                    <h3>Похожие места</h3>
-                    <a href="#"><img src="#" alt="Интересное место1">Интересное место1</a>
-                    <a href="#"><img src="#" alt="Интересное место2">Интересное место2</a>
-                    <a href="#"><img src="#" alt="Интересное место3">Интересное место3</a>
-                    <a href="#"><img src="#" alt="Интересное место4">Интересное место4</a>
-                    <a class="btn aside__similar-places__btn" href="#">Еще</a>
+                <section class="aside__other-places">
+                    <h3>Другие интересные места</h3>
+                    <a class="aside__other-places__img" href="#"><img src="../../images/content/places/kotor/350px-Kotor,_Montenegro,_Boka_Kotorska.jpg" alt="Котор, Черногория"></a>
+                    <a class="aside__other-places__txt" href="#">Котор, Черногория</a>
+                    <a class="aside__other-places__img" href="#"><img src="../../images/content/places/quito/Quito-volcanico.jpg" alt="Кито, Эквадор"></a>
+                    <a class="aside__other-places__txt" href="#">Кито, Эквадор</a>
+                    <a class="aside__other-places__img" href="#"><img src="../../images/content/places/dublin/dublin800X600X3.jpg" alt="Дублин, Ирландия"></a>
+                    <a class="aside__other-places__txt" href="#">Дублин, Ирландия</a>
+                    <a class="aside__other-places__img" href="#"><img src="../../images/content/places/georgetown/georgetown-malaysia-5.jpg" alt="Джорджтаун, Малайзия"></a>
+                    <a class="aside__other-places__txt" href="#">Джорджтаун, Малайзия</a>
+                    <a class="btn aside__other-places__btn" href="#">Еще</a>
                 </section>
             </aside>
             <section class="content__main-info">
@@ -148,7 +157,7 @@
                     <li><a href="#photo" data-toggle="tab">Фото</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane active" id="main-info">
+                    <div class="tab-pane fade in active" id="main-info">
                         <article class="tab__main-info">
                             <h2>Миэ</h2>
                             <h3>Префектура Японии</h3>
@@ -161,7 +170,7 @@
                             <p><strong>Птица: </strong>Снежный зуёк</p>
                         </article>
                     </div>
-                    <div class="tab-pane" id="when">
+                    <div class="tab-pane fade" id="when">
                         <div class="month-blocks segment-graph">
                             <div class="segment-graph-item segment-graph-item--1" |>
                                 <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
@@ -266,12 +275,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="how">
+                    <div class="tab-pane fade" id="how">
                         <p>Миэ находится в четырех часах езды от Токио на скоростном поезде.</p>
                         <p>Вы можете добраться до префектуры Миэ, прилетев в (Центрэйр) Международный аэропорт Чубу или международный аэропорт Кансай.</p>
                         <p>Вы можете добраться до столицы префектуры Ми, Цу, примерно за 45 минут, или до Мацузаки примерно за 75 минут на скоростном катере от Чубу (Центрэйр) аэропорта.</p>
                     </div>
-                    <div class="tab-pane" id="hotels">
+                    <div class="tab-pane fade" id="hotels">
                         <ul>
                             <li>Hotel Hamarikyu 3*</li>
                             <li>Hotel Maritaime Kaikoen Kifuka</li>
@@ -280,7 +289,7 @@
                             <li>Green Park Tsu 4*</li>
                         </ul>
                     </div>
-                    <div class="tab-pane what-to-do" id="what-to-do">
+                    <div class="tab-pane fade what-to-do" id="what-to-do">
                         <div class="hor-2 what-to-do-1">
                             <div class="what-to-do__txt">
                                 Посетить храм Исэ
@@ -302,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane photo" id="photo">
+                    <div class="tab-pane fade photo" id="photo">
                         <img src="../../images/content/places/mie/prefecture_mie_top.jpg">
                         <img src="../../images/content/places/mie/0_1174d7_d3aef510_orig.jpg">
                         <img src="../../images/content/places/mie/ago-bay-at-sunset--mie-prefecture--japan.jpg">
@@ -311,8 +320,18 @@
                 </div>
             </section>
             <section class="content__details">
+                <article class="place-details">
+                    <h2>Почему стоит посетить Миэ</h2>
+                    <p>Интригующие события происходят в префектуре Миэ, четыре часа езды от Токио на скоростном поезде, на котором в основном ездят внутренние путешественники. Привлекательные места района: Национальный парк Исэ-Шима, на береговой линии; устрицы производящие жемчуг; мраморная говядина в Мацусаке; и священные, защищенные ᴜɴᴇsᴄᴏ места паломничества Синто. В 2016 году, мировые лидеры будут сходиться в городе Шима на саммите G7. Путешественники должны отправиться в Аманему, шикарное переосмысление классического рьокана открывается в первом квартале. Ожидайте приуменьшенную, совершенную Дзен эстетику и сосредоточте внимание на здоровье. Все 24 люкса и четыре виллы в близкой собственности оснащены частными онсэн-омолаживающими бассейнами, заполненными богатыми минералами водами из горячих источников региона. Погрузитесь в безмятежность, прежде чем секрет раскроется.</p>
+                    <h2>Общая информация</h2>
+                    <h3>Климат</h3>
+                    <p>Климат префектуры вдоль берега умеренный, а в бассейне Уэно близок к экстремальному.</p>
+                    <p>Горная и покрытая лесами южная часть префектуры - Уэно отличается мягким климатом, но с частыми осадками.</p>
+                    <p><strong>Язык: </strong>Японский</p>
+                    
+                </article>
                 <div class="map">                                                
-                    <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841856.4437478939!2d136.42028255!3d34.49016234999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60043df54a474163%3A0x429e72fe7d388728!2z0JzQuNGNLCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1416939895820" frameborder="0" allowfullscreen></iframe>                        
+                    <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841856.4437478939!2d136.42028255!3d34.49016234999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60043df54a474163%3A0x429e72fe7d388728!2z0JzQuNGNLCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1416939895820" frameborder="0" allowfullscreen></iframe>
                 </div>
             </section>
         </div>
