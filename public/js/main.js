@@ -30,6 +30,7 @@ $(document).ready(function(){
 
 
 
+
 var places = []
 places.filter(findPlace)
 function findPlace(str, item) {
