@@ -178,19 +178,21 @@ footer {
 }
 #header__logo {
     width: 200px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .header__content {
     display: inline;
     position: absolute;
     margin: 20px 0 20px 20px;
+    padding-top: 20px;
 }
 .header__nav {
     display: inline-block;
     position: relative;
+    vertical-align: top;
 }
 .header__nav__li {
-    margin: 8px;
+    margin: 8px 4px 0 0;
     position: relative;
 }
 .header__nav__drp-dwn-list_i1,
@@ -203,7 +205,7 @@ footer {
     z-index: 1;
 }
 .header__nav__drp-dwn-list_i1 {
-	width: 280%;
+	width: 250%;
 }
 .header__nav__drp-dwn-list_i2 {
 	width: 80%;
@@ -230,17 +232,19 @@ ul.header__nav__drp-dwn-list_i1 li {
     padding: 5px 0; 
 }
 .nav__a {
+    display: block;
     color: rgb(0, 127, 127);
     font-size: 20px;
-    margin: -4px;
     padding: 2px 5px 2px;
+    width: 100%;
 }
 .nav__a:hover {
     background: rgb(0, 127, 127);
     color: white;
 }
 .header__search-form {
-    margin: 10px;
+    margin: 0 10px 10px 15px;
+    vertical-align: top;
 }
 .header__search-box {
     border: 1px solid rgba(255, 255, 255, 0);
@@ -309,8 +313,6 @@ ul.header__nav__drp-dwn-list_i1 li {
     text-indent: 300px;
     transition: text-indent 0.8s ease;
 }
-
-
 .svg-icon {
     fill: #A6CAF0;
     margin-right: 10px;
@@ -318,15 +320,105 @@ ul.header__nav__drp-dwn-list_i1 li {
 .svg-icon:hover {
     fill: rgb(0, 148, 255);
 }
+
+
 .header__btn {
-    margin: 50px;
+    float: right;
+    margin: 0 50px 0 50px;
     padding: 10px 20px;
-    width: 150px;
+    display: block;
 }
-.header__scl-media-btn {
-    vertical-align: middle;
+
+
+.header__scl-media {
+    color: white;
+    vertical-align: top;
+    float: right;
+    height: 45px;
+    width: 135px;
+    position: relative;
+}
+.header__scl-media a {
+    color: white;
+    text-decoration: none;
+}
+.header__scl-media .scl-outside {
+    display: inline-block;
+    height: 42px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
     width: 42px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: 0.6s ease width;
+    -moz-transition: 0.6s ease all;
+    -webkit-transition: 0.6s ease all;
 }
+.header__scl-media .scl-text {
+    font-size: 25px;
+    height: 100%;
+    padding-top: 9px;
+    font-weight: 700;
+    z-index: 100;
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: all 0.0s ease;
+    transition-delay: 0.4s;
+}
+.header__scl-media .scl-click {
+    opacity: 0;
+    padding: 3px 10px 5px;
+    margin: 0 auto;
+    z-index: 99;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.header__vk .scl-click {
+    padding: 10px 10px 5px;
+}
+.header__fb {
+    background: #455F9A;
+    margin-bottom: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header__twitter {
+    background: #11C1FF;
+    margin-bottom: 2px;
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+.header__vk {
+    background: #4C75A3;
+    position: absolute;
+    top: 0;
+    left: 89px;
+}
+.scl-outside:hover {
+    width: 135px;    
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 42px;
+    left: 0;
+    z-index: 101
+}
+.scl-outside:hover .scl-text {
+    opacity: 0;
+}
+.scl-outside:hover .scl-click {
+    opacity: 1;
+    margin-top:0;
+    transition: all 0.0s ease;
+    transition-delay: 0.4s;
+    z-index: 102
+}
+
 
 /* MAIN PAGE */
 /* main content */
@@ -349,8 +441,7 @@ ul.header__nav__drp-dwn-list_i1 li {
 }
 @media screen and (min-width: 1280px) {
     .begin-journey__content_fhd {
-        
-        
+ 
     }
 }
 .begin-journey__content {
@@ -434,6 +525,7 @@ ul.header__nav__drp-dwn-list_i1 li {
     margin: 20px auto;
     position: relative;
     top: 0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 .art__ref {
     text-decoration: none;
@@ -575,6 +667,7 @@ ul.header__nav__drp-dwn-list_i1 li {
 }
 a.aside__other-places__img {
     margin-bottom: 0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 .aside__other-places img {
     display: block;
@@ -750,6 +843,7 @@ a.aside__other-places__btn:hover {
     top: 0;
     left: 0;
     text-align: center;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 .what-to-do-1 {
     background: url('../images/content/places/mie/grand-shrine-of-ise_1.jpg') 50% 50% no-repeat;

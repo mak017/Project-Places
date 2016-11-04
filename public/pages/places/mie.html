@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <script type="text/javascript" src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="../../../Bootstrap-3-Typeahead-master/bootstrap3-typeahead.js"></script>
-    <script type="text/javascript" src="../../../node_modules/bootstrap/js/tab.js"></script>
-    <script type="text/javascript" src="../../../node_modules/bootstrap/js/transition.js"></script>
+    <script type="text/javascript" <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
     <script type="text/javascript" src="../../js/share42.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/places.js"></script>
 </head>
 
 <body class="place">
@@ -89,7 +90,7 @@
                     </ul>
                 </nav>
                 <form action="#" class="inline-block header__search-form" method="GET">
-                    <input class="header__search-box" type="text"  data-provide="typeahead" name="search-box" placeholder="Поиск замечательных мест">
+                    <input class="header__search-box" type="text"  data-provide="typeahead" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
                     <a href="#">
                         <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
@@ -101,15 +102,29 @@
                         </svg>
                     </a>
                 </form>
-                <a href="#" class="btn header__btn">
+                <div class="header__scl-media">
+                        <div class="scl-outside header__fb">
+                            <div class="scl-text"><span class="fa fa-facebook"></span></div>
+                            <div class="scl-click">
+                                <a href="#" title="Поделиться в Facebook">Лайкни нас на Фэйсбук</a>
+                            </div>
+                        </div>
+                        <div class="scl-outside header__twitter">
+                            <div class="scl-text"><span class="fa fa-twitter"></span></div>
+                            <div class="scl-click">
+                                <a href="#" title="Поделиться в Twitter">Читай нас на Твиттере</a>
+                            </div>
+                        </div>
+                        <div class="scl-outside header__vk">
+                            <div class="scl-text"><span class="fa fa-vk"></span></div>
+                            <div class="scl-click">
+                                <a href="#" title="Поделиться в ВК">Поделись в ВК</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn header__btn">
                         Войти
                     </a>
-                <div class="inline-block header__scl-media">
-                    <a href="#" title="Поделиться в Facebook"><img class="header__scl-media-btn" src="../../images/scl-media-icons/Facebook.jpg" alt="Поделиться в Facebook"></a>
-                    <a href="#" title="Поделиться в Twitter"><img class="header__scl-media-btn" src="../../images/scl-media-icons/Twitterbird.png" alt="Поделиться в Twitter"></a>
-                    <a href="#" title="Поделиться в VK"><img class="header__scl-media-btn" src="../../images/scl-media-icons/b_vk.png" alt="Поделиться в VK"></a>
-                </div>
-
             </div>
         </header>
         <div class="content">
