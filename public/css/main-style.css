@@ -146,6 +146,7 @@ footer {
     margin: 0;
     position: relative;
     bottom: 0;
+    min-height: 150px;
 }
 .inline-block {
     display: inline-block;
@@ -243,6 +244,7 @@ ul.header__nav__drp-dwn-list_i1 li {
     color: white;
 }
 .header__search-form {
+    position: relative;
     margin: 0 10px 10px 15px;
     vertical-align: top;
 }
@@ -312,6 +314,18 @@ ul.header__nav__drp-dwn-list_i1 li {
 .header__search-box:focus:-ms-input-placeholder {
     text-indent: 300px;
     transition: text-indent 0.8s ease;
+}
+.typeahead.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 52px;
+    padding-left: 0;
+    list-style: none;
+}
+.do-site-search {
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 .svg-icon {
     fill: #A6CAF0;
@@ -417,6 +431,43 @@ ul.header__nav__drp-dwn-list_i1 li {
     transition: all 0.0s ease;
     transition-delay: 0.4s;
     z-index: 102
+}
+
+.footer-r1 {
+    position: relative;
+    min-height: 135px;
+}
+.footer-c1 {
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    padding: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 33.3333333%;
+}
+.footer__logo-wraper {
+    padding: 2% 10%;
+}
+#footer__logo {
+    text-align: center;
+    width: 150px;
+}
+.footer__nav {
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    left: 33.33333%;
+    text-align: center;
+}
+.share42init {
+    padding: 4% 2%;
+    text-align: center;
+    left: 66.66666%;
+    border-right: none;
+}
+#copyright {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 
@@ -555,31 +606,6 @@ ul.header__nav__drp-dwn-list_i1 li {
     min-width: 360px;
     width: 45%;
 }
-.footer-r1 {
-    border-right: 1px solid rgba(0, 0, 0, .3);
-    padding: 2% 10%;
-    
-    width: 30%;
-}
-#footer__logo {
-    text-align: center;
-    width: 150px;
-}
-.footer__nav {
-    border-right: 1px solid rgba(0, 0, 0, .3);
-    margin: 2%;
-    text-align: center;
-    width: 30%
-}
-.share42init {
-    margin: 2%;
-    text-align: center;
-    width: 30%
-}
-#copyright {
-    text-align: center;
-    margin: 0;
-}
 
 /* PLACE PAGE */
 
@@ -667,6 +693,9 @@ ul.header__nav__drp-dwn-list_i1 li {
 }
 a.aside__other-places__img {
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 .aside__other-places img {

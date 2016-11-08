@@ -8,14 +8,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="../../../Bootstrap-3-Typeahead-master/bootstrap3-typeahead.js"></script>
+    <script type="text/javascript" src="../../../bower_components/typeahead.js/dist/typeahead.jquery.min.js"></script>
     <script type="text/javascript" <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
     <script type="text/javascript" src="../../js/share42.js"></script>
-
     <script type="text/javascript" src="../../js/main.js"></script>
-    <script type="text/javascript" src="../../js/places.js"></script>
-
     <script type="text/javascript" src="../../js/place.js"></script>
 
 </head>
@@ -94,12 +91,8 @@
                     </ul>
                 </nav>
                 <form action="#" class="inline-block header__search-form" method="GET">
-<<<<<<< HEAD
-                    <input class="header__search-box" type="text"  data-provide="typeahead" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
-=======
-                    <input class="header__search-box" type="text" data-provide="typeahead" data-source="../../js/places.json" name="search-box" placeholder="Поиск замечательных мест">
->>>>>>> 034a566f9e587d683279d66e7aae52f64cfd9ed2
-                    <a href="#">
+                    <input class="header__search-box typeahead" type="text"  data-provide="typeahead" data-source="../../js/places.json" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
+                    <button class="do-site-search" type="submit">
                         <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
                             <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
@@ -108,7 +101,7 @@
                                 c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
                             />
                         </svg>
-                    </a>
+                    </button>
                 </form>
                 <div class="header__scl-media">
                         <div class="scl-outside header__fb">
@@ -359,20 +352,21 @@
             </section>
         </div>
         <footer>
-            <div class="footer-r1 inline-block">
-                <img class="inline-block" id="footer__logo" src="../../images/logo2.png">
+            <div class="footer-r1">
+                <div class="footer-c1 footer__logo-wraper">
+                    <img class="inline-block" id="footer__logo" src="../../images/logo2.png">
+                </div>
+                <nav class="footer-c1 footer__nav">
+                    <ul>
+                        <li class="footer__nav__li"><a href="#">О проекте</a></li>
+                        <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
+                        <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
+                        <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
+                        <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-c1 share42init"></div>
             </div>
-            <nav class="footer__nav inline-block">
-                <ul>
-                    <li class="footer__nav__li"><a href="#">О проекте</a></li>
-                    <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
-                    <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
-                    <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
-                    <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
-                </ul>
-            </nav>
-            <div class="inline-block share42init"></div>
-            <br>
             <p id="copyright">© 2016 Денис Маковский</p>
         </footer>
     </div>
