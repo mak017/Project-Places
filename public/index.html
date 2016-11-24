@@ -8,12 +8,63 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
         <script type="text/javascript" src="js/share42.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
+    
     <body class="main">
-        <div id="main-container">
+        <!-- Mobile navigation and search -->
+        <ul class="mobile-nav">
+            <li class="mob-nav-item"><a href="index.html">Главная</a></li>
+            <ul class="panel">
+                <li class="panel-heading mob-nav-item"  id="collapseListGroupHeading1">
+                    <a href="#collapseListGroup1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseListGroup1">Места
+                        <svg id="icon-chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1021" height="1024" viewBox="0 0 1021 1024" class="mdl-js">
+                            <g id="icomoon-ignore">
+                            </g>
+                            <path d="M497.356 660.264c11.591 11.528 30.676 11.528 42.268 0l336.393-336.589c11.659-11.528 30.676-11.528 42.399 0l80.109 80.304c11.659 11.659 11.659 30.547 0 42.268l-336.653 336.198c-11.659 11.528-30.676 30.547-42.334 42.333l-80.174 80.042c-11.659 11.724-30.547 11.724-42.204 0l-457.99-457.794c-11.788-11.724-11.788-30.808 0-42.529l80.042-80.043c11.659-11.788 30.743-11.788 42.333 0l335.806 335.806z"/>
+                        </svg>
+                    </a>
+                </li>
+                <div class="collapse" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1"
+                    aria-expanded="true">
+                    <ul class="list-group">
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Австралия и Океания</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Азия</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Антарктида</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Африка</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Европа</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Северная Америка</a></li>
+                        <li class="mob-nav-item mob-nav-item__level2"><a href="#">Южная Америка</a></li>
+                    </ul>
+                </div>
+            </ul>
+            <li class="mob-nav-item"><a href="#">Статьи</a></li>
+            <li class="mob-nav-item"><a href="#">Войти</a></li>
+        </ul>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label id="nav-trigger-label" for="nav-trigger">
+            <div class='nav-icon1'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+        <span class="search-trigger" id="search-trigger">
+            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g><path d="M742,685.5c0,0-15.9,20.4-37.1,40.5l244.5,233.4l40.6-37L742,685.5L742,685.5z M828.8,432.5c0,231.7-183.2,405.6-410.3,405.6C181.7,834.8,10,653.2,10,432.9C10,220.1,194.8,40.6,418.5,40.6C645.6,40.6,828.8,222.4,828.8,432.5L828.8,432.5L828.8,432.5z M417,93.8c-194.7,0-352.4,153.8-352.4,345.6C64.6,631.2,222.4,786,417,786c194.7,0,357.2-154.9,357.2-346.7C774.2,247.6,611.7,93.8,417,93.8L417,93.8L417,93.8z"/></g>
+            </svg>
+            <div class='close-search-icon'>
+                <span></span>
+                <span></span>
+            </div>
+        </span>
+
+        <!-- General layout -->
+        <div class="main-container" id="main-container">
             <header class="header">
                 <div class="header__logo">
                     <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
@@ -85,20 +136,15 @@
                             <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
                         </ul>
                     </nav>
-                    <form action="#" class="inline-block header__search-form" method="GET">
-                        <input class="header__search-box typeahead" type="text" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
+                    <form action="#" class="header__search-form" id="header__search-form" method="GET">
+                            <input class="header__search-box typeahead" type="text" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
                         <button class="do-site-search" type="submit">
-                            <svg class="svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
-                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833
-                                    C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537
-                                    c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946
-                                    c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
+                            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833 C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537 c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946 c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
                                 />
                             </svg>
                         </button>
                     </form>
-                    
                     <div class="header__scl-media">
                         <div class="scl-outside header__fb">
                             <div class="scl-text"><span class="fa fa-facebook"></span></div>
@@ -125,7 +171,7 @@
                 </div>
             </header>
             <section class="begin-journey">
-               <div class="begin-journey__content begin-journey__content_fhd">
+               <div class="begin-journey__content">
                    <div class="begin-journey__content__text">Мы отобрали для вас лучшие места на планете, которые обязательно стоит посетить</div>
                    <a href="#" class="btn begin-journey__content__btn">Начать путешествие</a>
                </div>
@@ -174,7 +220,7 @@
                 <div class="subscribe__form">
                     <form action="#" method="POST">
                     <input type="email" name="email" placeholder="Введите E-Mail">
-                    <button type="submit">Подписаться</button>
+                    <button type="submit" class="btn">Подписаться</button>
                     </form>
                 </div>
             </section>
