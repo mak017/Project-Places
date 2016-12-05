@@ -10,6 +10,8 @@
         <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKxmZIZrxyubcs9_qbOzXQ1xDygEchWa8&signed_in=true&callback=initMap"></script>
         <script type="text/javascript" src="js/share42.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
@@ -70,10 +72,10 @@
                     <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="images/logo2_with_title.png"></a>
                 </div>
                 <div class="header__content">
-                    <nav class="inline-block header__nav">
-                        <ul class="inline-block header__nav">
-                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="index.html">Главная</a></li>
-                            <li class="inline-block header__nav__li header__nav__drp-dwn-list-top1">
+                    <nav class="header__nav">
+                        <ul class="header__nav">
+                            <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="index.html">Главная</a></li>
+                            <li class="header__nav__li header__nav__drp-dwn-list-top1">
                                 <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
                                 <ul class="header__nav__drp-dwn-list_i1">
                                     <li class="header__nav__drp-dwn-list-top2">
@@ -133,7 +135,8 @@
 									</li>
                                 </ul>
                             </li>
-                            <li class="inline-block header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                            <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                            <li class="header__nav__li search-ref"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Поиск</a></li>
                         </ul>
                     </nav>
                     <form action="#" class="header__search-form" id="header__search-form" method="GET">
@@ -178,7 +181,7 @@
             </section>
             <section class="map">
                 <h1 class="map">Куда бы Вы отправились?</h1>
-                <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61136490.731508106!2d36.05702214334653!3d20.73152232563811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1473420924857" frameborder="0"  allowfullscreen></iframe>
+                <div class="map__frame" id="map"></iframe>
             </section>
             <section class="main-articles">
                 <h1>Последние статьи</h1>
@@ -227,7 +230,7 @@
             <footer>
             <div class="footer-r1">
                 <div class="footer-c1 footer__logo-wraper">
-                    <img class="inline-block" id="footer__logo" src="images/logo2.png">
+                    <img id="footer__logo" src="images/logo2.png">
                 </div>
                 <nav class="footer-c1 footer__nav">
                     <ul>
