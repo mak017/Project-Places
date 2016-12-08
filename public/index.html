@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Places — лучшие места на планете</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/main-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
         <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
-        <script async defer
+        <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKxmZIZrxyubcs9_qbOzXQ1xDygEchWa8&signed_in=true&callback=initMap"></script>
         <script type="text/javascript" src="js/share42.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
@@ -21,17 +21,12 @@
         <ul class="mobile-nav">
             <li class="mob-nav-item"><a href="index.html">Главная</a></li>
             <ul class="panel">
-                <li class="panel-heading mob-nav-item"  id="collapseListGroupHeading1">
+                <li class="panel-heading mob-nav-item" id="collapseListGroupHeading1">
                     <a href="#collapseListGroup1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseListGroup1">Места
-                        <svg id="icon-chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1021" height="1024" viewBox="0 0 1021 1024" class="mdl-js">
-                            <g id="icomoon-ignore">
-                            </g>
-                            <path d="M497.356 660.264c11.591 11.528 30.676 11.528 42.268 0l336.393-336.589c11.659-11.528 30.676-11.528 42.399 0l80.109 80.304c11.659 11.659 11.659 30.547 0 42.268l-336.653 336.198c-11.659 11.528-30.676 30.547-42.334 42.333l-80.174 80.042c-11.659 11.724-30.547 11.724-42.204 0l-457.99-457.794c-11.788-11.724-11.788-30.808 0-42.529l80.042-80.043c11.659-11.788 30.743-11.788 42.333 0l335.806 335.806z"/>
-                        </svg>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
                     </a>
                 </li>
-                <div class="collapse" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1"
-                    aria-expanded="true">
+                <div class="collapse" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
                     <ul class="list-group">
                         <li class="mob-nav-item mob-nav-item__level2"><a href="#">Австралия и Океания</a></li>
                         <li class="mob-nav-item mob-nav-item__level2"><a href="#">Азия</a></li>
@@ -181,7 +176,7 @@
             </section>
             <section class="map">
                 <h1 class="map">Куда бы Вы отправились?</h1>
-                <div class="map__frame" id="map"></iframe>
+                <div class="map__frame" id="map"></div>
             </section>
             <section class="main-articles">
                 <h1>Последние статьи</h1>
@@ -222,8 +217,8 @@
                 <h3 class="subscribe__text">Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
                 <div class="subscribe__form">
                     <form action="#" method="POST">
-                    <input type="email" name="email" placeholder="Введите E-Mail">
-                    <button type="submit" class="btn">Подписаться</button>
+                        <input type="email" name="email" placeholder="Введите E-Mail">
+                        <button type="submit" class="btn">Подписаться</button>
                     </form>
                 </div>
             </section>
