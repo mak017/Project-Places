@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Япония — Places</title>
+    <base href="../../../index.html" target="_blank">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
+    <script src="assets/js/share42.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/place.js"></script>
+</head>
+
+<body class="place">
+    <!-- Mobile navigation and search -->
+    <ul class="mobile-nav">
+        <li class="mob-nav-item"><a href="index.html">Главная</a></li>
+        <ul class="panel">
+            <li class="panel-heading mob-nav-item" id="collapseListGroupHeading1">
+                <a href="#collapseListGroup1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseListGroup1">Места
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </li>
+            <div class="collapse" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
+                <ul class="list-group">
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Австралия и Океания</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Азия</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Антарктида</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Африка</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Европа</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Северная Америка</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Южная Америка</a></li>
+                </ul>
+            </div>
+        </ul>
+        <li class="mob-nav-item"><a href="#">Статьи</a></li>
+        <li class="mob-nav-item"><a href="#">Войти</a></li>
+    </ul>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label id="nav-trigger-label" for="nav-trigger">
+        <div class='nav-icon1'>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </label>
+    <span class="search-trigger" id="search-trigger">
+            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g><path d="M742,685.5c0,0-15.9,20.4-37.1,40.5l244.5,233.4l40.6-37L742,685.5L742,685.5z M828.8,432.5c0,231.7-183.2,405.6-410.3,405.6C181.7,834.8,10,653.2,10,432.9C10,220.1,194.8,40.6,418.5,40.6C645.6,40.6,828.8,222.4,828.8,432.5L828.8,432.5L828.8,432.5z M417,93.8c-194.7,0-352.4,153.8-352.4,345.6C64.6,631.2,222.4,786,417,786c194.7,0,357.2-154.9,357.2-346.7C774.2,247.6,611.7,93.8,417,93.8L417,93.8L417,93.8z"/></g>
+            </svg>
+            <div class='close-search-icon'>
+                <span></span>
+    <span></span>
+    </div>
+    </span>
+
+    <!-- General layout -->
+    <div class="main-container" id="main-container">
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="assets/images/logo2_with_title.png"></a>
+            </div>
+            <div class="header__content">
+                <nav class="header__nav">
+                    <ul class="header__nav">
+                        <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="index.html">Главная</a></li>
+                        <li class="header__nav__li header__nav__drp-dwn-list-top1">
+                            <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                            <ul class="header__nav__drp-dwn-list_i1">
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Австралия и Океания</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Австралия</a></li>
+                                        <li><a class="nav__a" href="#">Новая Зеландия</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Азия</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Индонезия</a></li>
+                                        <li><a class="nav__a" href="#">Китай</a></li>
+                                        <li><a class="nav__a" href="#">Таиланд</a></li>
+                                        <li><a class="nav__a" href="#">Филиппины</a></li>
+                                        <li><a class="nav__a" href="#">Шри-Ланка</a></li>
+                                        <li><a class="nav__a" href="assets/pages/countries/japan.html">Япония</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__a" href="#">Антарктида</a></li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Африка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Египет</a></li>
+                                        <li><a class="nav__a" href="#">Кения</a></li>
+                                        <li><a class="nav__a" href="#">Тунис</a></li>
+                                        <li><a class="nav__a" href="#">ЮАР</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Европа</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Великобритания</a></li>
+                                        <li><a class="nav__a" href="#">Германия</a></li>
+                                        <li><a class="nav__a" href="#">Испания</a></li>
+                                        <li><a class="nav__a" href="#">Италия</a></li>
+                                        <li><a class="nav__a" href="#">Франция</a></li>
+                                        <li><a class="nav__a" href="#">Швейцария</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Северная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Канада</a></li>
+                                        <li><a class="nav__a" href="#">Мексика</a></li>
+                                        <li><a class="nav__a" href="#">США</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Южная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Аргентина</a></li>
+                                        <li><a class="nav__a" href="#">Бразилия</a></li>
+                                        <li><a class="nav__a" href="#">Чили</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                        <li class="header__nav__li search-ref"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Поиск</a></li>
+                    </ul>
+                </nav>
+                <form action="#" class="header__search-form" id="header__search-form" method="GET">
+                    <input class="header__search-box typeahead" type="text" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
+                    <button class="do-site-search" type="submit">
+                            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833 C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537 c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946 c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
+                                    />
+                            </svg>
+                    </button>
+                </form>
+                <div class="header__scl-media">
+                    <div class="scl-outside header__fb">
+                        <div class="scl-text"><span class="fa fa-facebook"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в Facebook">Лайкни нас на Фэйсбук</a>
+                        </div>
+                    </div>
+                    <div class="scl-outside header__twitter">
+                        <div class="scl-text"><span class="fa fa-twitter"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в Twitter">Читай нас на Твиттере</a>
+                        </div>
+                    </div>
+                    <div class="scl-outside header__vk">
+                        <div class="scl-text"><span class="fa fa-vk"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в ВК">Поделись в ВК</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn header__btn">Войти</a>
+            </div>
+        </header>
+        <div class="country__content">
+            <div class="country__header">
+                <div id="country-photo-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <h1>Япония</h1>
+                        <a href="#" class="country__breadcrumb">Азия</a>
+                        <div class="item active">
+                            <img src="assets/images/content/countries/japan/38553070.jpg" alt="Япония — это прекрасные виды">
+                            <div class="carousel-caption">
+                                <h3>это прекрасные виды</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/content/countries/japan/55840024.jpg" alt="Япония — это жизнь большого города">
+                            <div class="carousel-caption">
+                                <h3>это жизнь большого города</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/content/countries/japan/71500105.jpg" alt="Япония — это центр суши">
+                            <div class="carousel-caption">
+                                <h3>это центр суши</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/content/countries/japan/96681879.jpg" alt="Япония — это прогулка в загадочных местах">
+                            <div class="carousel-caption">
+                                <h3>это прогулка в загадочных местах</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/content/countries/japan/GettyImages-535904171_super.jpg" alt="Япония — это купание в горячих источниках">
+                            <div class="carousel-caption">
+                                <h3>это купание в горячих источниках</h3>
+                            </div>
+                        </div>
+                        <button class="btn country-cities__btn">Города</button>
+                    </div>
+                     <!-- Controls (hidden) -->
+                     <a class="left carousel-control" href="#country-photo-carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#country-photo-carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="subscribe">
+            <h3 class="subscribe__text">Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
+            <div class="subscribe__form">
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Введите E-Mail">
+                    <button type="submit" class="btn">Подписаться</button>
+                </form>
+                </div>
+        </section>
+        <footer>
+            <div class="footer-r1">
+                <div class="footer-c1 footer__logo-wraper">
+                    <img id="footer__logo" src="assets/images/logo2.png">
+                </div>
+                <nav class="footer-c1 footer__nav">
+                    <ul>
+                        <li class="footer__nav__li"><a href="#">О проекте</a></li>
+                        <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
+                        <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
+                        <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
+                        <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-c1 share42init"></div>
+            </div>
+            <p id="copyright">© 2016 Денис Маковский</p>
+        </footer>
+    </div>
+</body>
+
+</html>

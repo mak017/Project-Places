@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Префектура Миэ — одно из лучших мест на планете</title>
+    <base href="../../../index.html" target="_blank">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
+    <script src="assets/js/share42.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/place.js"></script>
+</head>
+
+<body class="place">
+    <!-- Mobile navigation and search -->
+    <ul class="mobile-nav">
+        <li class="mob-nav-item"><a href="index.html">Главная</a></li>
+        <ul class="panel">
+            <li class="panel-heading mob-nav-item" id="collapseListGroupHeading1">
+                <a href="#collapseListGroup1" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseListGroup1">Места
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </li>
+            <div class="collapse" id="collapseListGroup1" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
+                <ul class="list-group">
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Австралия и Океания</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Азия</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Антарктида</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Африка</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Европа</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Северная Америка</a></li>
+                    <li class="mob-nav-item mob-nav-item__level2"><a href="#">Южная Америка</a></li>
+                </ul>
+            </div>
+        </ul>
+        <li class="mob-nav-item"><a href="#">Статьи</a></li>
+        <li class="mob-nav-item"><a href="#">Войти</a></li>
+    </ul>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label id="nav-trigger-label" for="nav-trigger">
+            <div class='nav-icon1'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+    <span class="search-trigger" id="search-trigger">
+            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g><path d="M742,685.5c0,0-15.9,20.4-37.1,40.5l244.5,233.4l40.6-37L742,685.5L742,685.5z M828.8,432.5c0,231.7-183.2,405.6-410.3,405.6C181.7,834.8,10,653.2,10,432.9C10,220.1,194.8,40.6,418.5,40.6C645.6,40.6,828.8,222.4,828.8,432.5L828.8,432.5L828.8,432.5z M417,93.8c-194.7,0-352.4,153.8-352.4,345.6C64.6,631.2,222.4,786,417,786c194.7,0,357.2-154.9,357.2-346.7C774.2,247.6,611.7,93.8,417,93.8L417,93.8L417,93.8z"/></g>
+            </svg>
+            <div class='close-search-icon'>
+                <span></span>
+    <span></span>
+    </div>
+    </span>
+
+    <!-- General layout -->
+    <div class="main-container" id="main-container">
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html" title="Places &ndash; сайт лучших мест на планете"><img id="header__logo" src="assets/images/logo2_with_title.png"></a>
+            </div>
+            <div class="header__content">
+                <nav class="header__nav">
+                    <ul class="header__nav">
+                        <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="index.html">Главная</a></li>
+                        <li class="header__nav__li header__nav__drp-dwn-list-top1">
+                            <a class="nav__a header__nav__drp-dwn-list-top" href="#">Места</a>
+                            <ul class="header__nav__drp-dwn-list_i1">
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Австралия и Океания</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Австралия</a></li>
+                                        <li><a class="nav__a" href="#">Новая Зеландия</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Азия</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Индонезия</a></li>
+                                        <li><a class="nav__a" href="#">Китай</a></li>
+                                        <li><a class="nav__a" href="#">Таиланд</a></li>
+                                        <li><a class="nav__a" href="#">Филиппины</a></li>
+                                        <li><a class="nav__a" href="#">Шри-Ланка</a></li>
+                                        <li><a class="nav__a" href="assets/pages/countries/japan.html">Япония</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__a" href="#">Антарктида</a></li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Африка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Египет</a></li>
+                                        <li><a class="nav__a" href="#">Кения</a></li>
+                                        <li><a class="nav__a" href="#">Тунис</a></li>
+                                        <li><a class="nav__a" href="#">ЮАР</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Европа</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Великобритания</a></li>
+                                        <li><a class="nav__a" href="#">Германия</a></li>
+                                        <li><a class="nav__a" href="#">Испания</a></li>
+                                        <li><a class="nav__a" href="#">Италия</a></li>
+                                        <li><a class="nav__a" href="#">Франция</a></li>
+                                        <li><a class="nav__a" href="#">Швейцария</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Северная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Канада</a></li>
+                                        <li><a class="nav__a" href="#">Мексика</a></li>
+                                        <li><a class="nav__a" href="#">США</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav__drp-dwn-list-top2">
+                                    <a class="nav__a" href="#">Южная Америка</a>
+                                    <ul class="header__nav__drp-dwn-list_i2">
+                                        <li><a class="nav__a" href="#">Аргентина</a></li>
+                                        <li><a class="nav__a" href="#">Бразилия</a></li>
+                                        <li><a class="nav__a" href="#">Чили</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav__li"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Статьи</a></li>
+                        <li class="header__nav__li search-ref"><a class="nav__a header__nav__drp-dwn-list-top1" href="#">Поиск</a></li>
+                    </ul>
+                </nav>
+                <form action="#" class="header__search-form" id="header__search-form" method="GET">
+                    <input class="header__search-box typeahead" type="text" autocomplete="off" name="search-box" placeholder="Поиск замечательных мест">
+                    <button class="do-site-search" type="submit">
+                            <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 512 512" enable-background="new 0 0 22 22" xml:space="preserve">
+                                <path id="magnifier-icon" d="M460.475,408.443L351.4,299.37c15.95-25.137,25.2-54.923,25.2-86.833 C376.601,122.914,303.687,50,214.062,50c-89.623,0-162.537,72.914-162.537,162.537s72.914,162.537,162.537,162.537 c30.326,0,58.733-8.356,83.055-22.876L406.918,462L460.475,408.443z M112.117,212.537c0-56.213,45.732-101.946,101.945-101.946 c56.213,0,101.947,45.733,101.947,101.946s-45.733,101.945-101.947,101.945C157.849,314.482,112.117,268.75,112.117,212.537z"
+                                    />
+                            </svg>
+                    </button>
+                </form>
+                <div class="header__scl-media">
+                    <div class="scl-outside header__fb">
+                        <div class="scl-text"><span class="fa fa-facebook"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в Facebook">Лайкни нас на Фэйсбук</a>
+                        </div>
+                    </div>
+                    <div class="scl-outside header__twitter">
+                        <div class="scl-text"><span class="fa fa-twitter"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в Twitter">Читай нас на Твиттере</a>
+                        </div>
+                    </div>
+                    <div class="scl-outside header__vk">
+                        <div class="scl-text"><span class="fa fa-vk"></span></div>
+                        <div class="scl-click">
+                            <a href="#" title="Поделиться в ВК">Поделись в ВК</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn header__btn">Войти</a>
+            </div>
+        </header>
+        <div class="content">
+            <section class="content__header">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Азия</a></li>
+                    <li><a href="assets/pages/countries/japan.html">Япония</a></li>
+                    <li class="active">Префектура Миэ</li>
+                </ol>
+                <h1>Префектура Миэ</h1>
+                <a class="content__header__place-parent" href="assets/pages/countries/japan.html">Япония</a>
+            </section>
+            <section class="content__wrapper">
+                <section class="content__main-info">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#main-info" data-toggle="tab">Общая информация</a></li>
+                        <li><a href="#when" data-toggle="tab">Когда посещать</a></li>
+                        <li><a href="#how" data-toggle="tab">Как добраться</a></li>
+                        <li><a href="#hotels" data-toggle="tab">Отели</a></li>
+                        <li><a href="#what-to-do" data-toggle="tab">Чем заняться</a></li>
+                        <li><a href="#photo" data-toggle="tab">Фото</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="main-info">
+                            <article class="tab__main-info">
+                                <h2>Миэ</h2>
+                                <h3>Префектура Японии</h3>
+                                <p>Миэ — префектура, занимающая южную часть полуострова Кии в регионе Кинки острова Хонсю в Японии.
+                                    Площадь префектуры составляет 5777,31 км², население — 1 821 554 человека, плотность населения
+                                    — 315,29 чел./км². Административный центр — город Цу.</p>
+                                <p><strong>Площадь: </strong>5 777 км²</p>
+                                <p><strong>Столица: </strong>Цу</p>
+                                <p><strong>Население: </strong>1,839 миллиона (31 мар. 2012 г.)</p>
+                                <p><strong>Птица: </strong>Снежный зуёк</p>
+                            </article>
+                        </div>
+                        <div class="tab-pane fade" id="when">
+                            <div class="month-blocks segment-graph">
+                                <div class="segment-graph-item segment-graph-item--1" |>
+                                    <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Янв
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--2" |>
+                                    <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Фев
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--3" |>
+                                    <div class="segment-graph__segment segment-graph__segment--subduedgray"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Мар
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--4" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Апр
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--5" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Май
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--6" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Июн
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--7" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Июл
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--8" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softgreen"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Авг
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--9" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Сен
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--10" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Окт
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--11" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Ноя
+                                    </div>
+                                </div>
+                                <div class="segment-graph-item segment-graph-item--12 segment-graph-item--last" |>
+                                    <div class="segment-graph__segment segment-graph__segment--softblue"></div>
+                                    <div class="segment-graph__label copy--caption">
+                                        Дек
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-wrapper--30">
+                                <div class="col--seasonal seasonal__col">
+                                    <h4 class="copy--h4 seasonal__col-header seasonal__col-header--low">
+                                        Низкий поток туризма
+                                        <span class="seasonal__col__time">(Январь–Март)</span>
+                                    </h4>
+                                    <p>
+                                        Зима прохладная или холодная на большей части острова Хонсю, но это нормально для путешествий. Будьте готовы к снегу в горах. Многие компании закрываются в период Нового года (конец декабря и начало января).
+                                    </p>
+                                </div>
+                                <div class="col--seasonal seasonal__col">
+                                    <h4 class="copy--h4 seasonal__col-header seasonal__col-header--shoulder">
+                                        Средний поток туризма
+                                        <span class="seasonal__col__time">(Июнь и Июль, Сентябрь–Декабрь)</span>
+                                    </h4>
+                                    <p>
+                                        Июнь и июль – сезон дождей в большей части Японии (за исключением Хоккайдо) - дождь не каждый день, но может быть довольно влажно. Осенью (с сентября до середины декабря), как правило, прохладно и ясно.
+                                    </p>
+                                </div>
+                                <div class="col--seasonal seasonal__col">
+                                    <h4 class="copy--h4 seasonal__col-header seasonal__col-header--high">
+                                        Высокий поток туризма
+                                        <span class="seasonal__col__time">(Апрель и Май, Август)</span>
+                                    </h4>
+                                    <p>
+                                        Полеты стоят дорого во время Золотой недели (в начале мая), О-Бон (середина августа) и Нового года. В городах острова Хонсю цветет вишня (в конце марта по начало апреля) и осенью опадает листва (ноябрь).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="how">
+                            <h3>Как добраться</h3>
+                            <p>Миэ находится в четырех часах езды от Токио на скоростном поезде.</p>
+                            <p>Вы можете добраться до префектуры Миэ, прилетев в (Центрэйр) Международный аэропорт Чубу или международный аэропорт Кансай.</p>
+                            <p>Вы можете добраться до столицы префектуры Ми, Цу, примерно за 45 минут, или до Мацузаки примерно за 75 минут на скоростном катере от Чубу (Центрэйр) аэропорта.</p>
+                        </div>
+                        <div class="tab-pane fade" id="hotels">
+                            <h3>Отели</h3>
+                            <ul>
+                                <li>Hotel Hamarikyu 3*</li>
+                                <li>Hotel Maritaime Kaikoen Kifuka</li>
+                                <li>Hotel Green Park Suzuka 3*</li>
+                                <li>Ama no Shima</li>
+                                <li>Green Park Tsu 4*</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade what-to-do" id="what-to-do">
+                            <div class="what-to-do-item what-to-do-1">
+                                <div class="what-to-do__txt">
+                                    Посетить храм Исэ
+                                </div>
+                            </div>
+                            <div class="what-to-do-item what-to-do-2">
+                                <div class="what-to-do__txt">
+                                    Побывать в самом знаменитом музее ниндзя в Ига-Уэно
+                                </div>
+                            </div>
+                            <div class="what-to-do-item what-to-do-3">
+                                <div class="what-to-do__txt">
+                                    Взобраться на "скалы-супруги" Мэото Ива
+                                </div>
+                            </div>
+                            <div class="what-to-do-item what-to-do-4">
+                                <div class="what-to-do__txt">
+                                    Посмотреть гонку Формулы&#160;1 на автодроме Судзука
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade photo" id="photo">
+                            <div id="place-photo-carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#place-photo-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#place-photo-carousel" data-slide-to="1"></li>
+                                    <li data-target="#place-photo-carousel" data-slide-to="2"></li>
+                                    <li data-target="#place-photo-carousel" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="assets/images/content/places/mie/zimnij_festival_sveta_kuvana_prefektura__0757FC63.jpg" alt="Зимний фестиваль света, Кувана">
+                                        <div class="carousel-caption">
+                                            <h3>Зимний фестиваль света, Кувана</h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/content/places/mie/0_1174d7_d3aef510_orig.jpg" alt="Jizoiwa - страж Suzuka Quasi-National Park">
+                                        <div class="carousel-caption">
+                                            <h3>Jizoiwa - страж Suzuka Quasi-National Park</h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/content/places/mie/ago-bay-at-sunset--mie-prefecture--japan.jpg" alt="Залив Аго на закате">
+                                        <div class="carousel-caption">
+                                            <h3>Залив Аго на закате</h3>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/content/places/mie/photo.jpg" alt="Волны омывают Мэото Ива, скалы-супруги, в Футами">
+                                        <div class="carousel-caption">
+                                            <h3>Волны омывают Мэото Ива, скалы-супруги, в Футами</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#place-photo-carousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#place-photo-carousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+            <section class="content__details">
+                <article class="place-details">
+                    <h2>Почему стоит посетить Миэ</h2>
+                    <p>Интригующие события происходят в префектуре Миэ, четыре часа езды от Токио на скоростном поезде, на котором в основном ездят внутренние путешественники. Привлекательные места района: Национальный парк Исэ-Шима, на береговой линии; устрицы производящие жемчуг; мраморная говядина в Мацусаке; и священные, защищенные ᴜɴᴇsᴄᴏ места паломничества Синто. В 2016 году, мировые лидеры будут сходиться в городе Шима на саммите G7. Путешественники должны отправиться в Аманему, шикарное переосмысление классического рьокана открывается в первом квартале. Ожидайте приуменьшенную, совершенную Дзен эстетику и сосредоточте внимание на здоровье. Все 24 люкса и четыре виллы в близкой собственности оснащены частными онсэн-омолаживающими бассейнами, заполненными богатыми минералами водами из горячих источников региона. Погрузитесь в безмятежность, прежде чем секрет раскроется.</p>
+                    <div class="map">                   
+                        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841856.4437478939!2d136.42028255!3d34.49016234999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60043df54a474163%3A0x429e72fe7d388728!2z0JzQuNGNLCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1416939895820" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h2>Общая информация</h2>
+                    <h3>Климат</h3>
+                    <p>Климат префектуры вдоль берега умеренный, а в бассейне Уэно близок к экстремальному.</p>
+                    <p>Горная и покрытая лесами южная часть префектуры - Уэно отличается мягким климатом, но с частыми осадками.</p>
+                    <p><strong>Язык: </strong>Японский</p>
+                    <p><strong>Валюта: </strong>японская йена</p>
+                    <div class="place-advice-wrapper">
+                        <h2>Советы путешественникам</h2>
+                        <div class="place-advice__note">
+                            <h3>Важно знать</h3>
+                            <h4>Уважение</h4>
+                            <p>В префектуре сохраняют традиционный японский этикет, так что не забудьте поклониться старшим и снять обувь, когда указано сделать это.</p>
+                            <h4>Не станьте заложниками храмов</h4>
+                            <p> В Миэ находятся тысячи святынь и храмов. Для того, чтобы лучше оценить их пышность, перемешивайте посещения храмов с другими достопримечательностями, так чтоб они не смешивались все вместе.</p>
+                            <h4>Не тратьте все ваши йены в одном месте</h4>
+                            <p>Япония не дешевая страна; убедитесь, что ваш бюджет соответствует, так чтобы вы могли наслаждаться жизнью без необходимости постоянно проверять свой баланс на банковском счете.</p>
+                        </div>
+                        <div class="place-advice__main">
+                            <h3>Как сэкономить</h3>
+                            <p>Путешествуя в зимний период, Вы можете пропустить весеннее цветение вишни и осеннее ихменение листвы, но снижение цен на отели и полет может компенсировать это.
+                            <p>С проездным билетом для поездок по железным дорогам Японии (Japan Rail Pass) компании JR путешествовать по Японии очень удобно и дешево. Рекомендуем приобрести проездной на 7 дней (Japan Rail Pass 7 days). Примерно за те же деньги, в которые обходится поездка из Токио в Киото и обратно на суперэкспрессе «Синкансэн», вы сможете практически без ограничений путешествовать по железным дорогам JR в течение 7 дней.</p>
+                            <p>Прогуливайтесь пешком! Расходы на общественный транспорт в городах может стоить дорого, так что возьмите пару удобной обуви и планируйте пргулки.</p>
+                            <h3>Еда</h3>
+                            <p>Находясь в Японии, невозможно не попробовать японской кухни. Обязательно заранее научитесь есть при помощи палочек, так как в небольших японских ресторанчиках вилку и нож вам не предложат. Следует учитывать следующие моменты, если вы заказали:</p>
+                            <ul>
+                                <li>СУП с лапшой (рамэн или удон) - лапшу и все остальные ингредиенты надо есть палочками, а суп пить непосредственно из пиалы, в которой его подали. При этом у японцев не считается неприличным громко втягивать лапшу в рот.</li>
+                                <li>СУСИ - старайтесь не макать рис в соевый соус, а снимите палочками рыбу с риса и обмакните ее в соус, затем, вернув кусочек рыбы обратно на рис, положите суси в рот рисом вниз. Таким образом, можно придать остроту суси, но при этом не потеряется оригинальный вкус.</li>
+                                <li>РИС - когда закончите есть рис, положите палочки на специальную подставку или просто на стол. Ни в коем случае не кладите палочки в пиалу, так как пиала с рисом, в который воткнуты палочки ставится за умершего</li>
+                            </ul>
+                            <h3>Интересные места</h3>
+                            <h4>Жемчужный остров Микимото</h4>
+                            <img src="assets/images/content/places/mie/mikimotopearlisland_01.jpg" alt="Жемчужный остров Микимото">
+                            <p>На жемчужном острове Микимото можно посетить превосходный музей, где вы узнаете много нового о жемчуге, его выращивании, а также о Микимото Кокити — первом человеке, который преуспел в культивации жемчуга. Остров находится в заливе Тоба, и на него можно попасть по мосту.</p>
+                            <p>Микимото Кокити родился в Тобе в 1858 году и стал первым человеком, которому удалось культивировать жемчуг в 1893-м. В 1899 году он открыл первый магазин жемчуга Микимото. В мемориальном зале Микимото Кокити представлена история его жизни.</p>
+                            <p>Также на острове располагается музей Жемчуга, где можно подробно узнать о жемчуге и процессе его выращивания на японском и английском языках. В расположенном рядом торговом центре Перл Плаза вы можете оценить богатый выбор украшений из жемчуга и купить то, что придется вам по душе.</p>
+                            <h4>Музей ниндзя в Ига-Уэно</h4>
+                            <img src="assets/images/content/places/mie/iga045.jpg" alt="Музей ниндзя в Ига-Уэно">
+                            <p>Ига ниндзя ясики (яп. 伊賀忍者屋敷 усадьба ниндзя Ига) — самый знаменитый музей ниндзя, расположенный в центральном парке города Ига в префектуре Миэ. Он представляет собой небольшой замок, служивший тайной штаб-квартирой для клана профессиональных убийц.</p>
+                            <p>В отреставрированном средневековом здании сохранились различные потайные ходы и скрытые комнаты, раздвижные стены и спрятанные ловушки — все те ухищрения, которые позволяли клану эффективно обороняться от атак врагов или конкурентов. В целом, с внутренним строением усадьбы ниндзя можно ознакомиться благодаря виртуальной симуляции Second Life.</p>
+                            <p>В залах музея экспонируются экипировка (костюм синоби сёдзоку, доспехи, мидзугумо для ходьбы по болотам, ласты мидзукаки), оружие (сюрикэны, синобигатана, кусаригама, кинжалы, мины) и прочего рода приспособления, необходимые для ниндзя в разведке и бою. Также есть и предметы и одежда, применявшиеся ниндзя в быту. Кроме того, коллекция музея хранит древние манускрипты ниндзя и современные аудио-, видеоматериалы, посвящённые данной тематике.</p>
+                            <h4>Стальной Дракон 2000</h4>
+                            <img src="assets/images/content/places/mie/steel-dragon-2000_1.jpg" alt="Стальной Дракон 2000">
+                            <p>В городе Нагасима, на территории парка развлечений Nagashima Spa Land, находятся самые длинные американские горки в мире - Steel Dragon 2000. Точная длина трека «Стального дракона» составляет 2,478.99 метра, а максимальная высота конструкции достигает 97 метров. В строительство аттракциона было вложено более 52 млн. долларов США, значительная часть этих средств была потрачена на обеспечение безопасности аттракциона. Дело в том, что располагается парк развлечений в сейсмоопасной зоне, авторы проекта уникальных американских горок старались сделать аттракцион максимально устойчивым к землетрясениям.</p>
+                            <p>С уверенностью можно сказать, что «Стальной дракон» является одним из самых символичных аттракционов на планете, его открытие состоялось в 2000 году – в год дракона по восточному календарю. По своим очертаниям американские горки действительно напоминают гребень огромного дракона, аттракцион выглядит очень внушительно. Максимальная скорость, которую могут развить вагончики с пассажирами, составляет 150 км/ч. На этой внушительной скорости смельчакам предстоит преодолеть более десяти крутых взлетов и падений, гребень стального дракона – испытание не для слабонервных.</p>
+                            <h4>Храм Исэ</h4>
+                            <img src="assets/images/content/places/mie/grand-shrine-of-ise_1.jpg" alt="Храм Исэ">
+                            <p>Исэ-Дзингу (Исе-Дзингу, Дзингу яп. 伊勢神宮) — синтоистское святилище (дзингу) в городе Исе префектуры Миэ, посвящённое божеству Аматэрасу о-миками и отвечающей за снабжение богини продовольствием Тоёукэ.</p>
+                            <p>Исэ-Дзингу является главной синтоистской святыней, поэтому её называют просто Дзингу.</p>
+                            <p>Исэ-дзингу является хранительницей национальных сокровищ, в частности Священного Зеркала, являющегося императорской регалией. Исэ-дзингу считают основной синтоистской святыней Японии. Главный храм закрыт высоким деревянным забором, доступ в главное святилище ограничен — вход разрешён только священнослужителям высшего ранга и членам императорской фамилии. Основная кумирня огорожена в общем счёте четырьмя заборами, и посетители могут увидеть только фрагменты крыши. Весь комплекс обслуживают около ста священнослужителей. В основную кумирню имеют право входить только император и императрица.</p>
+                            <h4>Мэото Ива</h4>
+                            <img src="assets/images/content/places/mie/meoto-iva-003.jpg" alt="Мэото Ива">
+                            <p>Мэото Ива (яп. 夫婦岩) — два небольших кекура, расположенных в море у побережья района Футами (Исе). Они соединены веревкой симэнава и являются объектом поклонения в близлежащем храме Футами Окитама. Согласно синто, данные скалы символизируют брачный союз между ками Идзанаги и Идзанами. Поэтому они также прославляют браки между мужчиной и женщиной как таковые. Соединяющая скалы веревка весит больше тонны и должна меняться несколько раз в году, в ходе особой церемонии. На символизирующей мужчину большей скале расположены небольшие тории.</p>
+                            <p>Лучшим временем для обозрения скал является летний рассвет, во время которого солнце встаёт между скалами. Вдалеке можно увидеть гору Фудзи, а благодаря малому приливу скалы не разделяются водой. Храм Окитама и две скалы Мэото Ива расположены поблизости от главного святилища Исэ, наиболее важного места для синто.</p>
+                            
+                        </div>
+                    </div>
+                </article>
+                
+            </section>    
+            </section>
+            
+            <aside class="content__right-aside">
+                <section class="aside__articles__links">
+                    <h3>Последние статьи</h3>
+                    <a href="#">12 лучших мест для дайвинга в Красном море</a>
+                    <a href="#">Куда отправиться в зимнюю сказку: 6 мест, где зима – в удовольствие</a>
+                    <a href="#">Куда поехать в октябре и где можно купаться в это время года</a>
+                    <a href="#">Немного об Измире</a>
+                </section>
+                <section class="aside__other-places">
+                    <h3>Другие интересные места</h3>
+                    <a class="aside__other-places__img" href="#"><img src="assets/images/content/places/kotor/350px-Kotor,_Montenegro,_Boka_Kotorska.jpg" alt="Котор, Черногория"></a>
+                    <a class="aside__other-places__txt" href="#">Котор, Черногория</a>
+                    <a class="aside__other-places__img" href="#"><img src="assets/images/content/places/quito/Quito-volcanico.jpg" alt="Кито, Эквадор"></a>
+                    <a class="aside__other-places__txt" href="#">Кито, Эквадор</a>
+                    <a class="aside__other-places__img" href="#"><img src="assets/images/content/places/dublin/dublin800X600X3.jpg" alt="Дублин, Ирландия"></a>
+                    <a class="aside__other-places__txt" href="#">Дублин, Ирландия</a>
+                    <a class="aside__other-places__img" href="#"><img src="assets/images/content/places/georgetown/georgetown-malaysia-5.jpg" alt="Джорджтаун, Малайзия"></a>
+                    <a class="aside__other-places__txt" href="#">Джорджтаун, Малайзия</a>
+                    <a class="btn aside__other-places__btn" href="#">Еще</a>
+                </section>
+            </aside>
+        </div>
+        <section class="subscribe">
+            <h3 class="subscribe__text">Интересует всё, что связано с приключениями и интересные места в мире? Подпишись на новости сайта</h3>
+            <div class="subscribe__form">
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Введите E-Mail">
+                    <button type="submit" class="btn">Подписаться</button>
+                </form>
+                </div>
+        </section>
+        <footer>
+            <div class="footer-r1">
+                <div class="footer-c1 footer__logo-wraper">
+                    <img id="footer__logo" src="assets/images/logo2.png">
+                </div>
+                <nav class="footer-c1 footer__nav">
+                    <ul>
+                        <li class="footer__nav__li"><a href="#">О проекте</a></li>
+                        <li class="footer__nav__li"><a href="#">Обратная связь</a></li>
+                        <li class="footer__nav__li"><a href="#">Условия предоставления информации</a></li>
+                        <li class="footer__nav__li"><a href="#">Отказ от ответственности</a></li>
+                        <li class="footer__nav__li"><a href="#">Размещение рекламы</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-c1 share42init"></div>
+            </div>
+            <p id="copyright">© 2016 Денис Маковский</p>
+        </footer>
+    </div>
+</body>
+
+</html>
