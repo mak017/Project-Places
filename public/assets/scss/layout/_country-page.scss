@@ -1,0 +1,58 @@
+// COUNTRY PAGE
+
+// General 
+.country__content a {
+    text-decoration: none;
+}
+
+// Carousel
+.country__content .carousel-control {
+    opacity: 0;
+    z-index: -1;
+}
+.country__header {
+    height: 830px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    h1 {
+        top: 300px;
+        font-size: 120px;
+        font-weight: 700;
+    }
+    .carousel-caption {
+        top: 420px;
+        font-style: italic;
+    }
+}
+.country__header,
+.country__breadcrumb {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+} 
+.country__header h1,
+.country__breadcrumb,
+.country__header .carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+}
+
+.country__breadcrumb {
+    top: 260px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.country-cities__btn {
+    position: absolute;
+    top: 500px;
+    left: 46%;
+    z-index: 10;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

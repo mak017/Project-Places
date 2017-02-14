@@ -1,0 +1,172 @@
+/* Mobile navigation */
+.mobile-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: white;
+}
+.mob-nav-item {
+    width: 200px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 5px;
+    a {
+        display: block;
+        padding: 1rem;
+        color: #3b444f;
+        font-size: 1.2rem;
+        border-top: 1px solid #e4e4e4;
+        text-decoration: none;
+        @include transition(color 0.2s, background 0.5s);
+    }
+    .glyphicon-chevron-down {
+        font-size: 13px;
+        margin-top: 5px;
+        float: right;
+        color: #696969;
+        @include transition(all .35s);
+    }
+    &__level2 a {
+        padding: 0.5rem 0 0.5rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+    }
+}
+.mobile-nav > li:first-child a {
+    border-top: none;
+}
+.collapse {
+    display: none;
+    &.in {
+        display: block;
+    }
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    @include transition(height .35s, visibility .35s);
+}
+.panel-heading.open .glyphicon-chevron-down {
+    @include transform(rotate(90deg));
+}
+// Mobile nav and search styles
+.nav-trigger {
+    // hide the checkbox input
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label[for="nav-trigger"], .search-trigger {
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    visibility: visible;
+    @include breakpoint($medium-screen) {
+        visibility: hidden;
+    }
+}
+label[for="nav-trigger"] {
+    right: 15px;
+}
+.nav-icon1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    span {
+        position: absolute;
+        height: 2px;
+        width: inherit;
+        background: rgba(0,0,0,0.7);
+        opacity: 1;
+        left: 0;
+        @include transform(rotate(0deg));
+        @include transition(0.25s ease-in-out);
+        &:nth-child(1) {
+            top: 0px;
+        }
+        &:nth-child(2) {
+            top: 10px;
+        }
+        &:nth-child(3) {
+            top: 20px;
+        }
+    }
+}
+.nav-trigger:checked + label span:nth-child(1) {
+    background: rgb(255,255,255);
+    top: 10px;
+    @include transform(rotate(225deg));
+}
+.nav-trigger:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+.nav-trigger:checked + label span:nth-child(3) {
+    background: rgb(255,255,255);
+    top: 10px;
+    @include transform(rotate(-225deg));
+}
+// Make the Magic Happen
+.nav-trigger + label, .main-container, .main-container:after {
+    @include transition(right 0.2s, visibility 0.2s);
+}
+.nav-trigger:checked + label {
+    position: fixed;
+    right: 215px;
+}
+.nav-trigger:checked ~ .search-trigger {
+    visibility: hidden;
+}
+.nav-trigger:checked ~ .main-container {
+    right: 200px;
+}
+.nav-trigger:checked ~ .main-container:after {
+    visibility: visible;
+}
+.search-trigger {
+    margin-left: 15px;
+    &.active {
+        right: 12px;
+    }
+}
+
+span .search-icon {
+    cursor: pointer;
+    fill: rgba(0,0,0,0.7);
+    width: $search-icon-size;
+    height: $search-icon-size;
+}
+.close-search-icon {
+    opacity: 0;
+    height: $search-icon-size;
+    width: $search-icon-size;
+    cursor: pointer;
+    span {
+        position: absolute;
+        height: 2px;
+        width: inherit;
+        background: rgba(0,0,0,0.7);
+        opacity: 1;
+        left: 0;
+        top: 9px;
+        &:nth-child(1) {
+            @include transform(rotate(225deg));
+        }
+        &:nth-child(2) {
+            @include transform(rotate(-225deg));
+        }
+    }
+}
+.search-trigger.active {
+    .search-icon {
+        display: none;
+    }
+    .close-search-icon {
+        opacity: 1;
+    }
+}

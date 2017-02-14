@@ -1,0 +1,235 @@
+// MAIN PAGE
+%main-h1-before {
+    content: '';
+    background-color: $dark-blue;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+.main h1 {
+    color: $dark-blue;
+    font-size: 250%;
+    line-height: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px rgba(255,255,255,.5);
+    position: relative;
+    max-width: 80%;
+    margin: 2% auto;
+    &::before {
+        @extend %main-h1-before;
+    }
+    &::after {
+        @extend %main-h1-before;
+        top: auto;
+        bottom: 0;
+    }
+    @include breakpoint($medium-screen) {
+        font-size: 300%;
+        max-width: 100%;
+    }
+}
+
+
+/* main content */
+
+.begin-journey {
+    @include background('../images/content/main-page/gohffgwydnm-paul-green.jpg', $v-pos: 90%, $size: 100%);
+    color: white;
+    width: 100%;
+    min-height: 300px;
+    max-height: 1080px;
+    max-width: 1920px;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 5% auto;
+    &__content {
+        margin: 0;
+        padding: 12% 0;
+        min-width: 320px;
+        text-align: center;
+        &__text {
+            text-shadow: 1px 2px black;
+        }
+        &__btn {
+            font-size: 15px;
+            display: block;
+            margin: 25px auto;
+            padding: 10px;
+            width: 180px;
+        }
+    }
+    @include breakpoint($medium-screen) {
+        @include background(('../images/content/main-page/road-photo.jpg'));
+        font-size: 2.75rem;
+        &__content {
+            margin: 0 15%;
+            padding: 8% 0;
+            &__btn {
+                font-size: 22.5px;
+                margin: 33.3px auto;
+                width: 250px;
+            }
+        }
+    }
+    @include breakpoint($large-screen) {
+        font-size: 3.5rem;
+        &__content__btn {
+            font-size: 30px;
+            margin: 50px auto;
+            width: 300px;
+        }
+    }
+}
+
+/* Map section */
+.map {
+    display: none;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    h1, h1::before, h1::after, &__frame {
+        width: 100%;
+    }
+    &__frame {
+        min-height: 500px;
+        border: 0;
+    }
+    @include breakpoint($large-screen) {
+        display: block;
+    }
+}
+
+#iw_container {
+    font-family: $main-font;
+}
+.iw_title {
+    color: $dark-blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.iw_content {
+    text-align: left;
+    a {
+        color: $main-green;
+        font-size: 1.15rem;
+    }
+}
+.iw_img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* Articles section */
+.main-articles {
+    background: $main-green;
+    text-align: center;
+    margin-top: 20px; 
+    padding-bottom: 25px;
+    padding-top: 15px;
+    h1::before, h1::after {
+        width: 100%;
+        @include breakpoint($medium-screen) {
+            width: 80%;
+        }
+    }
+}
+.art-box {
+    display: inline-block;
+    margin: 10px 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    &__img {
+        width: 99%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        position: relative;
+        top: 0;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    }
+    @include breakpoint($medium-screen) {
+        margin: 10px 20px;
+        height: 400px;
+        width: 400px;
+        &__img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+.art__ref {
+    text-decoration: none;
+    color: $light-blue;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 2%;
+    &:hover {
+        color: $dark-blue;
+    }
+}
+
+/* Subscribe section */
+.subscribe {
+    @include background('../images/content/main-page/subscribe.png');
+    color: white;
+    text-align: center;
+    clear: both;
+    padding: 5% 2%;
+    position: relative;
+    max-height: 340px;
+    min-height: 250px;
+    width: 100%;
+    &__text {
+        font-size: 150%;
+        text-shadow: 1px 2px black;
+        display: inline-block;
+        min-width: 300px;
+        width: 85%;
+    }
+    &__form {
+        display: inline-block;
+        min-width: 300px;
+        width: 85%;
+        input[type="email"] {
+            font-family: $main-font;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid rgba(0,0,0,0.6);
+            width: 95%;
+        }
+        button {
+            font: 700 1.2rem $main-font;
+            display: block;
+            margin: 5px auto;
+            padding: 7px 12px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @include breakpoint($medium-screen) {
+        padding: 5% 12%;
+        text-align: left;
+        &__text {
+            display: block;
+            min-width: 360px;
+            width: 45%;
+        }
+        &__form {
+            min-width: 360px;
+            width: 45%;
+            input[type="email"] {
+                width: 190px;
+            }
+            button {
+                display: inline-block;
+                margin: 0;
+                width: 145px;
+            }
+        }
+    }
+}

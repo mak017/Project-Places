@@ -1,0 +1,230 @@
+// PLACE PAGE
+
+// General styles
+.place {
+    .main-container {
+        text-align: center;
+    }
+    .content {
+        color: #555;
+        margin: 30px auto;
+        max-width: $max-page-width;
+    }
+    h1 {
+        font-size: 300%;
+        margin-bottom: 2.25rem;
+    }
+    h2 {
+        font-size: 200%;
+        margin-bottom: 1.25rem;
+    }
+    p, .content li {
+        text-align: left;
+    }
+    @include breakpoint($medium-screen) {
+        .main-container {
+            text-align: left;
+        }
+        h2 {
+            font-size: 250%;
+        }
+    }
+}
+
+
+// Content header
+.content__header {
+    @include background(('../images/content/places/mie/teaser.jpg'));
+    clear: both;
+    height: 500px;
+    padding: 10px 10%;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+@import '../components/breadcrumb';
+
+.content__header__place-parent {
+    font-size: 150%;
+}
+
+.content__wrapper {
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    @include breakpoint($large-screen) {
+        margin-right: 0;
+        width: 65%;
+    }
+}
+
+.content__main-info {
+    float: left;
+    width: 100%;
+}
+
+@import '../components/tabs';
+@import '../components/segment-graph';
+
+
+/* What to do tab */
+.what-to-do {
+    position: relative;
+    vertical-align: middle;
+    &-item {
+        height: 400px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    }
+    &-item:hover &__txt {
+        opacity: 1;
+    }
+    &__txt {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 0;
+        transition: opacity 0.4s;
+    }
+    @include breakpoint($medium-screen) {
+        &-item {
+            height: 275px;
+            width: 49%;
+        }
+    }
+}
+.what-to-do-1 {
+    @include background('../images/content/places/mie/grand-shrine-of-ise_1.jpg');
+}
+.what-to-do-2 {
+    @include background('../images/content/places/mie/iga045.jpg');
+}
+.what-to-do-3 {
+    @include background('../images/content/places/mie/meoto-iva-003.jpg');
+}
+.what-to-do-4 {
+    @include background('../images/content/places/mie/japan.jpg');
+}
+
+
+@import '../components/carousel';
+
+/* Content details */
+.content__details {
+    width: 100%;
+}
+.place-advice__main {
+    margin-bottom: 50px;
+}
+.place-advice__note,
+.place-advice__main img {
+    float: none;
+    margin: 0 5px 10px;
+    width: 90%;
+    @include breakpoint($medium-screen) {
+        float: right;
+        margin: 0 0 0 20px;
+        width: 40%;        
+    }
+}
+.place-advice__note {
+    font-size: 0.9rem;
+    h3 {
+        background: $dark-blue;
+        padding: 10px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+
+/* Aside */
+.content__right-aside {
+    display: none;
+    float: right;
+    margin-right: 5%;
+    padding: 20px;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    a {
+        display: block;
+        margin: 20px 5px;
+        color: $main-green;
+        text-decoration: none;
+        &:hover {
+            color: transparentize($main-green, 0.1);
+        }
+    }
+    @include breakpoint($large-screen) {
+        display: block;
+    }
+}
+.aside__articles__links {
+    margin: 30px 5px;
+    position: relative;
+    &::after {
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -40px;
+        height: 1px;
+        width: 90%;
+        background: #ccc;
+    }
+}
+.aside__other-places {
+    margin: 90px 10px;
+    a {
+        margin-bottom: 30px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        width: 250px;
+    }
+}
+a.aside__other-places__img {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+a.aside__other-places__txt {
+    margin-top: 5px;
+}
+a.aside__other-places__btn {
+    background: transparent;
+    border: 1px solid $main-blue;
+    border-radius: 5px;
+    height: 30px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    color: $main-blue;
+    &:hover {
+        background: transparent;
+        border: 1px solid $dark-blue;
+        color: $dark-blue;
+    }
+}

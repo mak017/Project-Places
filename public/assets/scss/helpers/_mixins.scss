@@ -1,0 +1,47 @@
+@import 'compass';
+@import 'f:/Programs/WIN_Scout-App_2.12.12/Scout-App/bower_components/breakpoint-sass/stylesheets/breakpoint';
+
+@mixin placeholder {
+    color: $light-blue;
+    text-indent: 0;
+    transition: text-indent 1.5s ease-in-out;
+}
+@mixin focus-placeholder {
+    text-indent: $large-screen;
+    transition: text-indent 1.5s ease-in-out;
+}
+// fixed Compass mixin
+@mixin font-face2(
+  $name,
+  $font-files,
+  $eot: false,
+  $weight: false,
+  $style: false
+) {
+  $iefont: "#{$eot}?#iefix"; // "unquote" here caused an error, so removed it
+  @font-face {
+    font-family: quote($name);
+    @if $eot {
+      src: url($eot); // 'font-url' changed to 'url'
+      $font-files: url($iefont) unquote("format('embedded-opentype')"), $font-files;
+    }
+    src: $font-files;
+    @if $weight {
+      font-weight: $weight;
+    }
+    @if $style {
+      font-style: $style;
+    }
+  }
+}
+@mixin headings($from: 1, $to: 6){
+    @for $i from $from through $to{
+      h#{$i}{
+        @content
+      }
+    }
+}
+
+@mixin background($url, $h-pos: 50%, $v-pos: 50%, $size: cover, $repeat: no-repeat) {
+  background: url($url) $h-pos #{$v-pos} / #{$size} $repeat;
+}

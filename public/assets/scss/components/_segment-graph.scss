@@ -1,0 +1,69 @@
+// Segment graph (taken from travel.usnews.com)
+.month-blocks {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.segment-graph-item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    width: 7%;
+    &--1 .segment-graph__segment {
+        border-radius: 4px 0 0 4px;
+    }
+    &--last .segment-graph__segment {
+        border-radius: 0 4px 4px 0;
+    }
+}
+.segment-graph__segment {
+    opacity: 0.9;
+    position: relative;
+    height: 75%;
+    &--subduedgray {
+        background: $subduedgray;
+    }
+    &--softgreen {
+        background: $softgreen;
+    }
+    &--softblue {
+        background: $softblue;
+    }
+}
+.segment-graph__label {
+    font-size: 0.8rem;
+    color: #99a9b3;
+    height: 25%;
+    font-weight: bold;
+    text-align: center;
+    @include breakpoint($medium-screen) {
+        font-size: 0.93rem;
+    }
+}
+.copy--h4 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #297CBB;
+}
+.climate--map--portrait .seasonal__col-header {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    &:before {
+        height: 14px;
+        width: 14px;
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    &--low:before {
+        background: $subduedgray;
+    }
+    &--shoulder:before {
+        background: $softblue;
+    }
+    &--high:before {
+        background: $softgreen;
+    }
+}

@@ -1,0 +1,30 @@
+// styles from Bootstrap 3
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+    text-align: left;
+    visibility: hidden;
+    >li {
+        display: inline-block
+    }
+    a {
+        color: rgba(255,255,255,.5);
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+    &>li+li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0"
+    }
+    &>.active {
+        color: rgba(255,255,255,.5)
+    }
+    @include breakpoint($medium-screen) {
+        visibility: visible;
+    }
+}

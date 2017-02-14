@@ -1,0 +1,82 @@
+// Tabs (Bootstrap 3 styles)
+.nav {
+    padding-left: 0;
+    list-style: none;
+    >li {
+        position: relative;
+        display: block;
+        >a {
+            position: relative;
+            display: block;
+            padding: 4px 15px;
+            color: $main-blue;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background-color: #eee;
+            }
+        }
+    }
+    &-tabs {
+        border-bottom: 1px solid #ddd;
+        margin-top: 10px;
+        >li {
+            margin: auto;
+            >a {
+                margin-right: 2px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+                text-align: center;
+                &:hover {
+                    border-color: #eee #eee #ddd;
+                }
+            }
+            &.active>a,
+            &.active>a:focus,
+            &.active>a:hover {
+                color: #555;
+                cursor: default;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    @include breakpoint($medium-screen) {
+        &>li>a {
+            padding: 10px 15px;
+        }
+        &-tabs {
+            float: left;
+            height: auto;
+            margin-bottom: -1px;
+            >li {
+                float: left;
+                margin-bottom: -1px;
+            }
+        }
+    }
+}
+
+.tab-content {
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    >.tab-pane {
+        display: none;
+    }
+    >.active {
+        display: block;
+    }
+}
+.fade {
+    opacity: 0;
+    @include transition(opacity .15s linear);
+    &.in {
+        opacity: 1;
+    }
+}

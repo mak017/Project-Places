@@ -1,0 +1,104 @@
+/* Header styles */
+header {
+    border-bottom: 1px solid $dark-blue;
+    padding-bottom: 5px;
+    width: auto;
+    max-width: $max-page-width;
+    margin: 0 auto;
+    height: 60px;
+    @include breakpoint($medium-screen) {
+        height: 185px;
+        padding-bottom: 20px;
+    }
+    @include breakpoint($large-screen) {
+        width: 95%;
+    }
+}
+.header__logo {
+    text-align: center;
+    @include breakpoint($medium-screen) {
+        display: inline-block;
+    }
+}
+#header__logo {
+    width: 70px;
+    @include breakpoint($medium-screen) {
+        width: 200px;
+    }
+}
+
+.header__content {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 20px 20px;
+    padding-top: 40px;
+    width: calc(95% - 200px);
+    min-width: 50%;
+}
+.header__nav {
+    display: none;
+    position: relative;
+    vertical-align: top;
+    @include breakpoint($medium-screen) {
+        display: inline-block;
+    }
+    &__li {
+        display: inline-block;
+        margin: 9px 4px 0 0;
+        position: relative;
+    }
+    &__drp-dwn-list_i1,
+    &__drp-dwn-list_i2 {
+        display: none;
+        position: absolute;
+        top: 0;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    &__drp-dwn-list_i1 {
+        width: 330%;
+    }
+    &__drp-dwn-list_i2 {
+        width: 80%;
+    }
+    &__drp-dwn-list-top2 {
+        position: relative;
+    }
+    &__drp-dwn-list-top1:hover &__drp-dwn-list_i1,
+    &__drp-dwn-list-top2:hover &__drp-dwn-list_i2 {
+        display: block;
+        padding: 2px;
+    }
+    &__drp-dwn-list-top1:hover &__drp-dwn-list_i1 {
+        top: 100%;
+    }
+    &__drp-dwn-list-top2:hover &__drp-dwn-list_i2 {
+        left: 100%;
+    }
+}
+ul.header__nav__drp-dwn-list_i1 li {
+    padding: 5px 0; 
+}
+.nav__a {
+    display: block;
+    color: $main-green;
+    font-size: 20px;
+    padding: 2px 5px 2px;
+    width: 100%;
+    @include transition(all 0.3s);
+    &:hover {
+        background: $main-green;
+        color: white;
+    }
+}
+.search-ref {
+    display: none;
+    @include breakpoint($medium-screen $large-screen) {
+        display: inline-block;
+    }
+}
+
+@import '../components/forms';
+@import '../components/buttons';
