@@ -6,7 +6,7 @@
         text-align: center;
     }
     .content {
-        color: #555;
+        color: $font-color;
         margin: 30px auto;
         max-width: $max-page-width;
     }
@@ -44,7 +44,6 @@
         text-decoration: none;
     }
 }
-@import '../components/breadcrumb';
 
 .content__header__place-parent {
     font-size: 150%;
@@ -66,17 +65,12 @@
     width: 100%;
 }
 
-@import '../components/tabs';
-@import '../components/segment-graph';
-
-
 /* What to do tab */
 .what-to-do {
     position: relative;
     vertical-align: middle;
     &-item {
-        height: 400px;
-        width: 100%;
+        @include box(100%, 400px);
         display: inline-block;
         position: relative;
         top: 0;
@@ -90,8 +84,7 @@
     &__txt {
         position: absolute;
         left: 0;
-        width: 100%;
-        height: 100%;
+        @include box(100%);
         background-color: rgba(0, 0, 0, 0.4);
         opacity: 0;
         color: white;
@@ -102,8 +95,7 @@
     }
     @include breakpoint($medium-screen) {
         &-item {
-            height: 275px;
-            width: 49%;
+            @include box(49%, 275px);
         }
     }
 }
@@ -119,9 +111,6 @@
 .what-to-do-4 {
     @include background('../images/content/places/mie/japan.jpg');
 }
-
-
-@import '../components/carousel';
 
 /* Content details */
 .content__details {
@@ -187,8 +176,7 @@
         right: 0;
         top: auto;
         bottom: -40px;
-        height: 1px;
-        width: 90%;
+        @include box(90%, 1px);
         background: #ccc;
     }
 }
@@ -217,13 +205,11 @@ a.aside__other-places__btn {
     background: transparent;
     border: 1px solid $main-blue;
     border-radius: 5px;
-    height: 30px;
-    width: 50%;
+    @include box(50%, 30px);
     margin: 0 auto;
     padding: 5px;
     color: $main-blue;
     &:hover {
-        background: transparent;
         border: 1px solid $dark-blue;
         color: $dark-blue;
     }

@@ -48,80 +48,110 @@ places = [{
 ]
 
 
-// Typeahead search
+// JQuery
+
 $(document).ready(function() {
 
-        // Set the Options for "Bloodhound" Engine
-        var my_Suggestion_class = new Bloodhound({
-            limit: 10,
-            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
-            queryTokenizer: Bloodhound.tokenizers.whitespace,
-            local: $.map(places, function(item) {
-                //console.log(item.city);
-                return {
-                    value: item.place,
-                    country: item.country,
-                    img: item.img,
-                    url: item.url
-                };
-            })
-        });
+    // Typeahead search
 
-        //Initialize the Suggestion Engine
-        my_Suggestion_class.initialize();
+    // Set the Options for "Bloodhound" Engine
+    var my_Suggestion_class = new Bloodhound({
+        limit: 10,
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: $.map(places, function(item) {
+            //console.log(item.city);
+            return {
+                value: item.place,
+                country: item.country,
+                img: item.img,
+                url: item.url
+            };
+        })
+    });
 
-        var typeahead_elem = $('.typeahead');
-        typeahead_elem.typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-        },
-        {
-            name: 'value',
-            displayKey: 'value',
-            source: my_Suggestion_class.ttAdapter(),
-            templates: {
-                empty: [
-                    '<div class="noitems">',
-                    'No Items Found',
-                    '</div>'
-                ].join('\n'),
-                suggestion: function (data) {
-                    return '<a href="' + data.url + '"><img src="' + data.img + '"><span>' + data.value + ', ' + data.country + '</span></a>';
-                }
+    //Initialize the Suggestion Engine
+    my_Suggestion_class.initialize();
+
+    var typeahead_elem = $('.typeahead');
+    typeahead_elem.typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    },
+    {
+        name: 'value',
+        displayKey: 'value',
+        source: my_Suggestion_class.ttAdapter(),
+        templates: {
+            empty: [
+                '<div class="noitems">',
+                'No Items Found',
+                '</div>'
+            ].join('\n'),
+            suggestion: function (data) {
+                return '<a href="' + data.url + '"><img src="' + data.img + '"><span>' + data.value + ', ' + data.country + '</span></a>';
             }
-        });
+        }
     });
 
 
+    // Slick carousel
+    $('.experiences__list').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
+});
+
+
+// Vanilla Javascript
 
 window.onload = function() {
 
-// Mobile nav chevron rotation
-var menuElem = document.getElementById('collapseListGroupHeading1');
+    // Mobile nav chevron rotation
+    var menuElem = document.getElementById('collapseListGroupHeading1');
 
-    menuElem.onclick = function() {
-      this.classList.toggle('open');
-    };
+        menuElem.onclick = function() {
+        this.classList.toggle('open');
+        };
 
-// Mobile search
-var mobSearchTrigger = document.getElementById('search-trigger');
-var mobSearchForm = document.getElementById('header__search-form');
+    // Mobile search
+    var mobSearchTrigger = document.getElementById('search-trigger'),
+        mobSearchForm = document.getElementById('header__search-form');
 
-    mobSearchTrigger.addEventListener("click", function() {
-      document.getElementById('header__logo').classList.toggle('hide');
-      document.getElementById('nav-trigger-label').classList.toggle('hide');
-      mobSearchForm.classList.toggle('search-form_mob');
-      this.classList.toggle('active');
-      document.getElementById('main-container').classList.toggle('active');
-    });
+        mobSearchTrigger.addEventListener("click", function() {
+        document.getElementById('header__logo').classList.toggle('hide');
+        document.getElementById('nav-trigger-label').classList.toggle('hide');
+        mobSearchForm.classList.toggle('search-form_mob');
+        this.classList.toggle('active');
+        document.getElementById('main-container').classList.toggle('active');
+        });
+
+    // Top cities
+    var topCitiesBtn = document.getElementById('top-cities-btn'),
+        topCities = document.getElementById('top-cities'),
+        topCitiesClose = document.getElementById('top-cities-close');
+
+        // Open
+        topCitiesBtn.addEventListener('click', function() {
+            topCities.classList.add('top-cities_visible');
+            document.getElementById('main-container').classList.add('active');
+        })
+        // Close
+        topCitiesClose.addEventListener('click', function() {
+            topCities.classList.remove('top-cities_visible');
+            document.getElementById('main-container').classList.remove('active');
+        })
 }
 
 
 // Map
 
-var map;
-var infoWindow;
+var map,
+    infoWindow;
 
 // This function will iterate over markersData array
 // creating markers with createMarker function
@@ -156,9 +186,9 @@ function createMarker(latlng, place, typeOfPlace, country, ref, img){
    google.maps.event.addListener(marker, 'click', function() {
     
       var iwContent = '<div id="iw_container">' +
-            '<div class="iw_title">' + typeOfPlace + ' ' + place + ', ' + country + '</div>' +
-         '<div class="iw_content">' + '<img class="iw_img" src="' + img + '">' + '<a href="' +
-         ref + '">Перейти >></a>' + '</div></div>';
+        '<div class="iw_title">' + typeOfPlace + ' ' + place + ', ' + country + '</div>' +
+        '<div class="iw_content">' + '<img class="iw_img" src="' + img + '">' + '<a href="' +
+        ref + '">Перейти >></a>' + '</div></div>';
       
       infoWindow.setContent(iwContent);
       infoWindow.open(map, marker);

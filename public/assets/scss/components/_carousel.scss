@@ -1,4 +1,5 @@
-/* Photo tab */
+// Photo tab
+// Bootstrap carousel
 .carousel {
     position: relative;
     &-inner {
@@ -208,4 +209,55 @@
             bottom: 20px;
         }
     }
+}
+
+
+// Slick carousel 
+
+.slick-arrow {
+    position: absolute;
+    top: 36%;
+    @include box(3rem);
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Glyphicons Halflings';
+    z-index: 10;
+    @include transition(color .3s ease-in);
+    &:hover, &:focus {
+        color: $main-blue;
+        outline: 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include box(inherit);
+        border-radius: inherit;
+        background-color: inherit;
+    }
+    &::after {
+        position: absolute;
+        top: 1rem;
+        left: .3rem;
+        @include box(inherit);
+    }
+}
+.slick-prev {
+    left: -.3rem;
+    &::after {
+        content: '\e079';
+    }
+}
+.slick-next {
+    right: -.3rem;
+    &::after {
+        content: '\e080';
+    }
+}
+.slick-disabled {
+    z-index: -1;
 }

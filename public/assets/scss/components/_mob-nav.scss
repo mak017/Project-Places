@@ -1,7 +1,6 @@
 /* Mobile navigation */
 .mobile-nav {
-    width: 100%;
-    height: 100%;
+    @include box(100%);
     position: fixed;
     top: 30px;
     right: 0;
@@ -74,8 +73,7 @@ label[for="nav-trigger"] {
     right: 15px;
 }
 .nav-icon1 {
-    width: 30px;
-    height: 30px;
+    @include box(30px);
     position: relative;
     cursor: pointer;
     span {
@@ -136,15 +134,13 @@ label[for="nav-trigger"] {
 }
 
 span .search-icon {
+    @include box($search-icon-size);
     cursor: pointer;
     fill: rgba(0,0,0,0.7);
-    width: $search-icon-size;
-    height: $search-icon-size;
 }
 .close-search-icon {
+    @include box($search-icon-size);
     opacity: 0;
-    height: $search-icon-size;
-    width: $search-icon-size;
     cursor: pointer;
     span {
         position: absolute;
@@ -168,5 +164,6 @@ span .search-icon {
     }
     .close-search-icon {
         opacity: 1;
+        z-index: 101;
     }
 }

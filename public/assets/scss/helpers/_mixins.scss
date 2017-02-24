@@ -10,6 +10,7 @@
     text-indent: $large-screen;
     transition: text-indent 1.5s ease-in-out;
 }
+
 // fixed Compass mixin
 @mixin font-face2(
   $name,
@@ -34,6 +35,7 @@
     }
   }
 }
+
 @mixin headings($from: 1, $to: 6){
     @for $i from $from through $to{
       h#{$i}{
@@ -44,4 +46,87 @@
 
 @mixin background($url, $h-pos: 50%, $v-pos: 50%, $size: cover, $repeat: no-repeat) {
   background: url($url) $h-pos #{$v-pos} / #{$size} $repeat;
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin link {
+  color: inherit;
+  text-decoration: none;
+  @include transition(color .3s ease-in);
+    &:hover {
+      color: $main-blue;
+    }
+}
+
+@mixin link-upper-chevron-right {
+  color: $main-blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: lighten($main-blue, 10);
+  }
+  &:hover .glyphicon {
+    left: 0;
+  }
+  .glyphicon {
+    font-size: .5rem;
+    top: -1px;
+    left: .2rem;
+    @include transition(left .5s);
+  }
+}
+
+@mixin block {
+  padding: 0 3.5rem;
+  background-color: white;
+}
+@mixin block-wrap {
+  width: 100%;
+  border-bottom: 0.5px solid transparentize($grey, .1);
+}
+
+@mixin heading-red-stripe {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: $heading-after-red;
+    margin-left: -.5*$heading-after-red;
+    border-bottom: .2rem solid red;
+  }
+}
+
+@mixin marker-counter($position, $counter) {
+  position: $position;
+  font-family: $secondary-font;
+  &::before {
+    content: counter($counter);
+    counter-increment: $counter;
+    display: block;
+    position: relative;
+    @include box(inherit);
+    text-align: center;
+    z-index: 5;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include box(inherit);
+    background: white;
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px transparentize($grey, .2);
+    @include transform(rotate(45deg));
+  }
 }

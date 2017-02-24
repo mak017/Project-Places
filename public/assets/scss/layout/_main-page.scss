@@ -139,13 +139,11 @@
     display: inline-block;
     margin: 10px 0;
     position: relative;
-    height: auto;
-    width: 100%;
+    @include box(100%, auto);
     text-align: center;
     vertical-align: top;
     &__img {
-        width: 99%;
-        height: auto;
+        @include box(99%, auto);
         display: block;
         margin: 20px auto;
         position: relative;
@@ -154,11 +152,9 @@
     }
     @include breakpoint($medium-screen) {
         margin: 10px 20px;
-        height: 400px;
-        width: 400px;
+        @include box(400px);
         &__img {
-            width: 400px;
-            height: 300px;
+            @include box(400px, 300px);
         }
     }
 }
@@ -170,66 +166,5 @@
     margin: 0 2%;
     &:hover {
         color: $dark-blue;
-    }
-}
-
-/* Subscribe section */
-.subscribe {
-    @include background('../images/content/main-page/subscribe.png');
-    color: white;
-    text-align: center;
-    clear: both;
-    padding: 5% 2%;
-    position: relative;
-    max-height: 340px;
-    min-height: 250px;
-    width: 100%;
-    &__text {
-        font-size: 150%;
-        text-shadow: 1px 2px black;
-        display: inline-block;
-        min-width: 300px;
-        width: 85%;
-    }
-    &__form {
-        display: inline-block;
-        min-width: 300px;
-        width: 85%;
-        input[type="email"] {
-            font-family: $main-font;
-            display: inline-block;
-            padding: 10px;
-            border: 1px solid rgba(0,0,0,0.6);
-            width: 95%;
-        }
-        button {
-            font: 700 1.2rem $main-font;
-            display: block;
-            margin: 5px auto;
-            padding: 7px 12px;
-            width: 100%;
-            text-align: center;
-        }
-    }
-    @include breakpoint($medium-screen) {
-        padding: 5% 12%;
-        text-align: left;
-        &__text {
-            display: block;
-            min-width: 360px;
-            width: 45%;
-        }
-        &__form {
-            min-width: 360px;
-            width: 45%;
-            input[type="email"] {
-                width: 190px;
-            }
-            button {
-                display: inline-block;
-                margin: 0;
-                width: 145px;
-            }
-        }
     }
 }

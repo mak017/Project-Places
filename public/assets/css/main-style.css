@@ -158,37 +158,37 @@ nav a {
   text-decoration: none;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h1 {
   font-weight: 700;
   line-height: 1.3em;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h2 {
   font-weight: 700;
   line-height: 1.3em;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h3 {
   font-weight: 700;
   line-height: 1.3em;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h4 {
   font-weight: 700;
   line-height: 1.3em;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h5 {
   font-weight: 700;
   line-height: 1.3em;
 }
 
-/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
 h6 {
   font-weight: 700;
   line-height: 1.3em;
@@ -249,286 +249,7 @@ p {
   display: none;
 }
 
-/* Mobile navigation */
-/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mobile-nav {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 30px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background: white;
-}
-
-/* line 13, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mob-nav-item {
-  width: 200px;
-  margin-left: auto;
-  margin-right: 0;
-  padding: 5px;
-}
-
-/* line 18, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mob-nav-item a {
-  display: block;
-  padding: 1rem;
-  color: #3b444f;
-  font-size: 1.2rem;
-  border-top: 1px solid #e4e4e4;
-  text-decoration: none;
-  -webkit-transition: color 0.2s, background 0.5s;
-  -moz-transition: color 0.2s, background 0.5s;
-  -o-transition: color 0.2s, background 0.5s;
-  transition: color 0.2s, background 0.5s;
-}
-
-/* line 27, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mob-nav-item .glyphicon-chevron-down {
-  font-size: 13px;
-  margin-top: 5px;
-  float: right;
-  color: #696969;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-/* line 34, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mob-nav-item__level2 a {
-  padding: 0.5rem 0 0.5rem 1.2rem;
-  font-size: 1rem;
-  border: none;
-}
-
-/* line 40, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.mobile-nav > li:first-child a {
-  border-top: none;
-}
-
-/* line 43, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.collapse {
-  display: none;
-}
-
-/* line 45, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.collapse.in {
-  display: block;
-}
-
-/* line 49, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s, visibility 0.35s;
-  -moz-transition: height 0.35s, visibility 0.35s;
-  -o-transition: height 0.35s, visibility 0.35s;
-  transition: height 0.35s, visibility 0.35s;
-}
-
-/* line 55, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.panel-heading.open .glyphicon-chevron-down {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-/* line 59, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-}
-
-/* line 64, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-label[for="nav-trigger"], .search-trigger {
-  position: absolute;
-  top: 20px;
-  z-index: 2;
-  visibility: visible;
-}
-
-@media (min-width: 720px) {
-  /* line 64, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-  label[for="nav-trigger"], .search-trigger {
-    visibility: hidden;
-  }
-}
-
-/* line 73, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-label[for="nav-trigger"] {
-  right: 15px;
-}
-
-/* line 76, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-icon1 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  cursor: pointer;
-}
-
-/* line 81, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-icon1 span {
-  position: absolute;
-  height: 2px;
-  width: inherit;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-/* line 90, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-icon1 span:nth-child(1) {
-  top: 0px;
-}
-
-/* line 93, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-icon1 span:nth-child(2) {
-  top: 10px;
-}
-
-/* line 96, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-icon1 span:nth-child(3) {
-  top: 20px;
-}
-
-/* line 101, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked + label span:nth-child(1) {
-  background: white;
-  top: 10px;
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-/* line 106, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked + label span:nth-child(2) {
-  opacity: 0;
-}
-
-/* line 109, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked + label span:nth-child(3) {
-  background: white;
-  top: 10px;
-  -webkit-transform: rotate(-225deg);
-  -moz-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  -o-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-}
-
-/* line 115, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger + label, .main-container, .main-container:after {
-  -webkit-transition: right 0.2s, visibility 0.2s;
-  -moz-transition: right 0.2s, visibility 0.2s;
-  -o-transition: right 0.2s, visibility 0.2s;
-  transition: right 0.2s, visibility 0.2s;
-}
-
-/* line 118, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked + label {
-  position: fixed;
-  right: 215px;
-}
-
-/* line 122, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked ~ .search-trigger {
-  visibility: hidden;
-}
-
-/* line 125, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked ~ .main-container {
-  right: 200px;
-}
-
-/* line 128, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.nav-trigger:checked ~ .main-container:after {
-  visibility: visible;
-}
-
-/* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.search-trigger {
-  margin-left: 15px;
-}
-
-/* line 133, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.search-trigger.active {
-  right: 12px;
-}
-
-/* line 138, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-span .search-icon {
-  cursor: pointer;
-  fill: rgba(0, 0, 0, 0.7);
-  width: 25px;
-  height: 25px;
-}
-
-/* line 144, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.close-search-icon {
-  opacity: 0;
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
-}
-
-/* line 149, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.close-search-icon span {
-  position: absolute;
-  height: 2px;
-  width: inherit;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  left: 0;
-  top: 9px;
-}
-
-/* line 157, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.close-search-icon span:nth-child(1) {
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-/* line 160, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.close-search-icon span:nth-child(2) {
-  -webkit-transform: rotate(-225deg);
-  -moz-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  -o-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-}
-
-/* line 166, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.search-trigger.active .search-icon {
-  display: none;
-}
-
-/* line 169, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
-.search-trigger.active .close-search-icon {
-  opacity: 1;
-}
-
-/* line 101, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
+/* line 99, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
 .main-container {
   min-height: 100%;
   min-width: 100%;
@@ -545,21 +266,26 @@ span .search-icon {
   background-image: linear-gradient(to bottom right, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
 }
 
-/* line 111, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
+/* line 109, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
 .main-container::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
-/* line 121, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
+/* line 117, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/base/_general.scss */
 .main-container.active::after {
-  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 100;
 }
 
 /* Header styles */
@@ -722,12 +448,1626 @@ ul.header__nav__drp-dwn-list_i1 li {
   }
 }
 
+/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+footer {
+  background: #A6CAF0;
+  clear: both;
+  margin: 0;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  min-height: 150px;
+}
+
+/* line 10, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+footer .footer-c1 {
+  padding: 2%;
+  float: none;
+  width: auto;
+}
+
+@media (min-width: 720px) {
+  /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  footer {
+    padding-top: 0;
+  }
+  /* line 17, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  footer .footer-c1 {
+    float: left;
+    width: 33.3333333%;
+  }
+}
+
+/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+.footer-r1 {
+  position: relative;
+  min-height: 200px;
+}
+
+@media (min-width: 720px) {
+  /* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  .footer-r1 {
+    min-height: 100px;
+  }
+}
+
+/* line 30, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+.footer__logo-wraper {
+  padding: 2%;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  /* line 30, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  .footer__logo-wraper {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+#footer__logo {
+  display: inline-block;
+  margin: 4%;
+  width: 125px;
+}
+
+@media (min-width: 720px) {
+  /* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  #footer__logo {
+    display: inline;
+    margin: 2%;
+    width: 150px;
+  }
+}
+
+/* line 51, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+.footer__nav {
+  border-left: none;
+  border-right: none;
+  height: 110px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  /* line 51, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  .footer__nav {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    height: auto;
+    position: relative;
+  }
+}
+
+/* line 67, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+.share42init {
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+}
+
+@media (min-width: 720px) {
+  /* line 67, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+  .share42init {
+    padding: 4% 2%;
+    position: relative;
+    left: 0;
+  }
+}
+
+/* line 80, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
+#copyright {
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.main h1::before, .main h1::after {
+  content: '';
+  background-color: #204080;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+/* line 11, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.main h1 {
+  color: #204080;
+  font-size: 250%;
+  line-height: 1.5em;
+  text-align: center;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  position: relative;
+  max-width: 80%;
+  margin: 2% auto;
+}
+
+/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.main h1::after {
+  top: auto;
+  bottom: 0;
+}
+
+@media (min-width: 720px) {
+  /* line 11, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .main h1 {
+    font-size: 300%;
+    max-width: 100%;
+  }
+}
+
+/* main content */
+/* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.begin-journey {
+  background: url("../images/content/main-page/gohffgwydnm-paul-green.jpg") 50% 90% / 100% no-repeat;
+  color: white;
+  width: 100%;
+  min-height: 300px;
+  max-height: 1080px;
+  max-width: 1920px;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 5% auto;
+}
+
+/* line 47, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.begin-journey__content {
+  margin: 0;
+  padding: 12% 0;
+  min-width: 320px;
+  text-align: center;
+}
+
+/* line 52, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.begin-journey__content__text {
+  text-shadow: 1px 2px black;
+}
+
+/* line 55, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.begin-journey__content__btn {
+  font-size: 15px;
+  display: block;
+  margin: 25px auto;
+  padding: 10px;
+  width: 180px;
+}
+
+@media (min-width: 720px) {
+  /* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .begin-journey {
+    background: url("../images/content/main-page/road-photo.jpg") 50% 50% / cover no-repeat;
+    font-size: 2.75rem;
+  }
+  /* line 66, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .begin-journey__content {
+    margin: 0 15%;
+    padding: 8% 0;
+  }
+  /* line 69, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .begin-journey__content__btn {
+    font-size: 22.5px;
+    margin: 33.3px auto;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .begin-journey {
+    font-size: 3.5rem;
+  }
+  /* line 78, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .begin-journey__content__btn {
+    font-size: 30px;
+    margin: 50px auto;
+    width: 300px;
+  }
+}
+
+/* Map section */
+/* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.map {
+  display: none;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* line 92, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.map h1, .map h1::before, .map h1::after, .map__frame {
+  width: 100%;
+}
+
+/* line 95, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.map__frame {
+  min-height: 500px;
+  border: 0;
+}
+
+@media (min-width: 1200px) {
+  /* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .map {
+    display: block;
+  }
+}
+
+/* line 104, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+#iw_container {
+  font-family: "PT Sans", Helvetica, sans-serif;
+}
+
+/* line 107, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.iw_title {
+  color: #204080;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* line 112, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.iw_content {
+  text-align: left;
+}
+
+/* line 114, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.iw_content a {
+  color: #007f7f;
+  font-size: 1.15rem;
+}
+
+/* line 119, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.iw_img {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+/* Articles section */
+/* line 125, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.main-articles {
+  background: #007f7f;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+
+/* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.main-articles h1::before, .main-articles h1::after {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  /* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .main-articles h1::before, .main-articles h1::after {
+    width: 80%;
+  }
+}
+
+/* line 138, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.art-box {
+  display: inline-block;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* line 145, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.art-box__img {
+  width: 99%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  top: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 720px) {
+  /* line 138, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .art-box {
+    margin: 10px 20px;
+    width: 400px;
+    height: 400px;
+  }
+  /* line 156, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  .art-box__img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/* line 161, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.art__ref {
+  text-decoration: none;
+  color: #A6CAF0;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 2%;
+}
+
+/* line 167, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+.art__ref:hover {
+  color: #204080;
+}
+
+/* line 5, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place .main-container {
+  text-align: center;
+}
+
+/* line 8, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place .content {
+  color: #3b444f;
+  margin: 30px auto;
+  max-width: 1600px;
+}
+
+/* line 13, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place h1 {
+  font-size: 300%;
+  margin-bottom: 2.25rem;
+}
+
+/* line 17, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place h2 {
+  font-size: 200%;
+  margin-bottom: 1.25rem;
+}
+
+/* line 21, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place p, .place .content li {
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+  /* line 25, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .place .main-container {
+    text-align: left;
+  }
+  /* line 28, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .place h2 {
+    font-size: 250%;
+  }
+}
+
+/* line 36, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__header {
+  background: url("../images/content/places/mie/teaser.jpg") 50% 50% / cover no-repeat;
+  clear: both;
+  height: 500px;
+  padding: 10px 10%;
+  color: white;
+}
+
+/* line 42, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 48, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__header__place-parent {
+  font-size: 150%;
+}
+
+/* line 52, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__wrapper {
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 95%;
+}
+
+@media (min-width: 1200px) {
+  /* line 52, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .content__wrapper {
+    margin-right: 0;
+    width: 65%;
+  }
+}
+
+/* line 63, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__main-info {
+  float: left;
+  width: 100%;
+}
+
+/* What to do tab */
+/* line 69, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do {
+  position: relative;
+  vertical-align: middle;
+}
+
+/* line 72, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-item {
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 81, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-item:hover .what-to-do__txt {
+  opacity: 1;
+}
+
+/* line 84, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do__txt {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 0;
+  transition: opacity 0.4s;
+}
+
+@media (min-width: 720px) {
+  /* line 97, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .what-to-do-item {
+    width: 49%;
+    height: 275px;
+  }
+}
+
+/* line 102, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-1 {
+  background: url("../images/content/places/mie/grand-shrine-of-ise_1.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 105, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-2 {
+  background: url("../images/content/places/mie/iga045.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 108, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-3 {
+  background: url("../images/content/places/mie/meoto-iva-003.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 111, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.what-to-do-4 {
+  background: url("../images/content/places/mie/japan.jpg") 50% 50% / cover no-repeat;
+}
+
+/* Content details */
+/* line 116, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__details {
+  width: 100%;
+}
+
+/* line 119, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place-advice__main {
+  margin-bottom: 50px;
+}
+
+/* line 122, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place-advice__note,
+.place-advice__main img {
+  float: none;
+  margin: 0 5px 10px;
+  width: 90%;
+}
+
+@media (min-width: 720px) {
+  /* line 122, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .place-advice__note,
+  .place-advice__main img {
+    float: right;
+    margin: 0 0 0 20px;
+    width: 40%;
+  }
+}
+
+/* line 133, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place-advice__note {
+  font-size: 0.9rem;
+}
+
+/* line 135, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.place-advice__note h3 {
+  background: #204080;
+  padding: 10px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Aside */
+/* line 147, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__right-aside {
+  display: none;
+  float: right;
+  margin-right: 5%;
+  padding: 20px;
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+/* line 155, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__right-aside a {
+  display: block;
+  margin: 20px 5px;
+  color: #007f7f;
+  text-decoration: none;
+}
+
+/* line 160, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.content__right-aside a:hover {
+  color: rgba(0, 127, 127, 0.9);
+}
+
+@media (min-width: 1200px) {
+  /* line 147, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+  .content__right-aside {
+    display: block;
+  }
+}
+
+/* line 168, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.aside__articles__links {
+  margin: 30px 5px;
+  position: relative;
+}
+
+/* line 171, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.aside__articles__links::after {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: -40px;
+  width: 90%;
+  height: 1px;
+  background: #ccc;
+}
+
+/* line 183, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.aside__other-places {
+  margin: 90px 10px;
+}
+
+/* line 185, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.aside__other-places a {
+  margin-bottom: 30px;
+}
+
+/* line 188, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+.aside__other-places img {
+  display: block;
+  margin: auto;
+  width: 250px;
+}
+
+/* line 194, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+a.aside__other-places__img {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* line 201, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+a.aside__other-places__txt {
+  margin-top: 5px;
+}
+
+/* line 204, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+a.aside__other-places__btn {
+  background: transparent;
+  border: 1px solid #0094ff;
+  border-radius: 5px;
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 5px;
+  color: #0094ff;
+}
+
+/* line 212, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
+a.aside__other-places__btn:hover {
+  border: 1px solid #204080;
+  color: #204080;
+}
+
+/* line 4, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__content {
+  color: #3b444f;
+}
+
+/* line 6, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__content a {
+  text-decoration: none;
+}
+
+/* line 12, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__content .carousel-control {
+  opacity: 0;
+  z-index: -1;
+}
+
+/* line 16, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__header {
+  height: 90vh;
+  max-height: 80rem;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__header h1 {
+  top: 300px;
+  font-size: 120px;
+  font-weight: 700;
+}
+
+/* line 28, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__header .carousel-caption {
+  top: 420px;
+  font-style: italic;
+}
+
+/* line 33, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__header,
+.country__breadcrumb {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* line 38, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__header h1,
+.country__breadcrumb,
+.country__header .carousel-caption {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  z-index: 10;
+}
+
+/* line 47, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__breadcrumb {
+  top: 260px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* line 52, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country__breadcrumb a {
+  color: inherit;
+}
+
+/* line 57, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country-cities__btn {
+  position: absolute;
+  top: 500px;
+  left: calc(50% - 60px);
+  width: 120px;
+  z-index: 10;
+  padding: 10px 15px;
+  font: 700 1.1rem "PT Sans", Helvetica, sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+}
+
+/* line 67, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.country-cities__btn .glyphicon-chevron-down {
+  left: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+  float: right;
+  color: inherit;
+}
+
+/* line 77, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100vh;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  -webkit-transition: bottom 0.4s, opacity 0.4s;
+  -moz-transition: bottom 0.4s, opacity 0.4s;
+  -o-transition: bottom 0.4s, opacity 0.4s;
+  transition: bottom 0.4s, opacity 0.4s;
+}
+
+/* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities_visible {
+  bottom: 0;
+  opacity: 1;
+  z-index: 9999;
+}
+
+/* line 92, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities_visible .top-cities__close {
+  top: -7.2rem;
+  -webkit-transition: top 0.4s, opacity 0.4s;
+  -webkit-transition-delay: 0.7s, 0.7s;
+  -moz-transition: top 0.4s 0.7s, opacity 0.4s 0.7s;
+  -o-transition: top 0.4s 0.7s, opacity 0.4s 0.7s;
+  transition: top 0.4s 0.7s, opacity 0.4s 0.7s;
+}
+
+/* line 95, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities_visible .top-cities__close span {
+  position: absolute;
+  width: 2.5rem;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  left: 1.3rem;
+}
+
+/* line 100, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities_visible .top-cities__close span:nth-child(1) {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* line 103, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities_visible .top-cities__close span:nth-child(2) {
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+/* line 108, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities__close {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2.5rem);
+  cursor: pointer;
+  outline: 0;
+  z-index: 9998;
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 50%;
+  background: white;
+}
+
+/* line 120, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities__content {
+  position: relative;
+  background: white;
+  z-index: 9999;
+}
+
+/* line 125, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-cities__wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: inherit;
+  padding: 4rem 6rem 6rem;
+}
+
+/* line 132, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list {
+  width: 100%;
+  max-width: 35rem;
+  counter-reset: top-list;
+}
+
+/* line 136, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 141, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__content {
+  position: relative;
+  padding-right: 45%;
+}
+
+/* line 145, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__three__item {
+  height: 67px;
+  margin-bottom: 10px;
+}
+
+/* line 149, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list a {
+  position: relative;
+}
+
+/* line 152, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__three__link {
+  display: block;
+  height: inherit;
+  padding-left: 8rem;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+/* line 60, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__three__link:hover {
+  color: #0094ff;
+}
+
+/* line 158, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 67px;
+}
+
+/* line 164, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__three__item:nth-of-type(1) .top-list__icon {
+  background: url("../images/content/places/tokyo/tokyo-icon.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 167, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__three__item:nth-of-type(2) .top-list__icon {
+  background: url("../images/content/places/kyoto/kyoto-icon.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 170, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__three__item:nth-of-type(3) .top-list__icon {
+  background: url("../images/content/places/osaka/osaka-icon.jpg") 50% 50% / cover no-repeat;
+}
+
+/* line 173, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__marker {
+  top: 21px;
+  left: 87.5px;
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  position: absolute;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* line 112, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__marker::before {
+  content: counter(top-list);
+  counter-increment: top-list;
+  display: block;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  z-index: 5;
+}
+
+/* line 121, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__marker::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: white;
+  border-radius: 20%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 180, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__title {
+  padding-top: 1rem;
+}
+
+/* line 183, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__subtitle {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 186, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__others {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 231px;
+  font-size: .8rem;
+}
+
+/* line 193, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__others li {
+  position: relative;
+  padding-bottom: 1.3rem;
+}
+
+/* line 196, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__others li::before {
+  content: counter(top-list) ".";
+  counter-increment: top-list;
+  position: absolute;
+  top: -.1rem;
+  left: -2rem;
+  color: rgba(0, 0, 0, 0.4);
+  font: 0.8rem Georgia, Times, "Times New Roman", serif;
+}
+
+/* line 206, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__others__link {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+/* line 60, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__others__link:hover {
+  color: #0094ff;
+}
+
+/* line 210, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.top-list__more {
+  display: block;
+  margin-top: 15px;
+  color: #0094ff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 69, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__more:hover {
+  color: #33a9ff;
+}
+
+/* line 72, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__more:hover .glyphicon {
+  left: 0;
+}
+
+/* line 75, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.top-list__more .glyphicon {
+  font-size: .5rem;
+  top: -1px;
+  left: .2rem;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+/* line 219, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.sub-nav {
+  display: -webkit-flex;
+  display: flex;
+  height: 5rem;
+  padding: 0 3.5rem;
+  background-color: white;
+}
+
+/* line 223, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.sub-nav__wrap {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 226, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.sub-nav__list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 232, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.sub-nav li {
+  padding: 0 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 237, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.sub-nav li a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* line 60, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.sub-nav li a:hover {
+  color: #0094ff;
+}
+
+/* line 247, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro {
+  padding: 0 3.5rem;
+  background-color: white;
+  text-align: center;
+}
+
+/* line 250, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__wrap {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+  padding: 10rem 5rem;
+}
+
+/* line 254, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro .intro__header {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 98, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.intro .intro__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3rem;
+  margin-left: -1.5rem;
+  border-bottom: .2rem solid red;
+}
+
+/* line 257, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro .intro__text {
+  max-width: 86%;
+  margin: 0 auto 5rem;
+  font-size: 1.2rem;
+  text-align: inherit;
+}
+
+/* line 262, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro .intro__text > span {
+  font-style: italic;
+}
+
+/* line 265, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro .intro__text a {
+  font-size: 1rem;
+  color: #0094ff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 69, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.intro .intro__text a:hover {
+  color: #33a9ff;
+}
+
+/* line 72, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.intro .intro__text a:hover .glyphicon {
+  left: 0;
+}
+
+/* line 75, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.intro .intro__text a .glyphicon {
+  font-size: .5rem;
+  top: -1px;
+  left: .2rem;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+/* line 270, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__author {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+/* line 60, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.intro__author:hover {
+  color: #0094ff;
+}
+
+/* line 273, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__author__img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+/* line 279, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__author:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 282, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__author__credits__name {
+  text-transform: uppercase;
+}
+
+/* line 285, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.intro__author__credits__profession {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 293, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences {
+  padding: 0 3.5rem;
+  background-color: white;
+}
+
+/* line 295, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences__wrap {
+  padding: 10rem 0;
+}
+
+/* line 298, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .experiences__header {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 98, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.experiences .experiences__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3rem;
+  margin-left: -1.5rem;
+  border-bottom: .2rem solid red;
+}
+
+/* line 302, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences__carousel {
+  margin: 0 -.4%;
+}
+
+/* line 305, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences__list {
+  margin: 0 -.4%;
+  counter-reset: top-experiences;
+}
+
+/* line 309, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences__item {
+  width: 23.5%;
+  margin: 0 .4%;
+}
+
+/* line 313, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .image-card {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* line 317, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .image-card__image {
+  padding-top: 150%;
+}
+
+/* line 320, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .image-card__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 8rem;
+  padding: 0 1.2rem 1.8rem;
+  background-image: -owg-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, transparent);
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, transparent);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, transparent);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, transparent);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, transparent);
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* line 332, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .image-card__marker {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 1rem auto;
+  color: #3b444f;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  position: relative;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* line 112, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.experiences .image-card__marker::before {
+  content: counter(top-experiences);
+  counter-increment: top-experiences;
+  display: block;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  z-index: 5;
+}
+
+/* line 121, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/helpers/_mixins.scss */
+.experiences .image-card__marker::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: white;
+  border-radius: 20%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 340, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences .image-card__subtitle {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* line 345, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
+.experiences__item:nth-of-type(1) .image-card__image {
+  background: url("../images/content/countries/japan/96681879.jpg") 50% 50% / cover no-repeat;
+}
+
+/* Mobile navigation */
+/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mobile-nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: white;
+}
+
+/* line 12, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mob-nav-item {
+  width: 200px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 5px;
+}
+
+/* line 17, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mob-nav-item a {
+  display: block;
+  padding: 1rem;
+  color: #3b444f;
+  font-size: 1.2rem;
+  border-top: 1px solid #e4e4e4;
+  text-decoration: none;
+  -webkit-transition: color 0.2s, background 0.5s;
+  -moz-transition: color 0.2s, background 0.5s;
+  -o-transition: color 0.2s, background 0.5s;
+  transition: color 0.2s, background 0.5s;
+}
+
+/* line 26, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mob-nav-item .glyphicon-chevron-down {
+  font-size: 13px;
+  margin-top: 5px;
+  float: right;
+  color: #696969;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* line 33, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mob-nav-item__level2 a {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+}
+
+/* line 39, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.mobile-nav > li:first-child a {
+  border-top: none;
+}
+
+/* line 42, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.collapse {
+  display: none;
+}
+
+/* line 44, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.collapse.in {
+  display: block;
+}
+
+/* line 48, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s, visibility 0.35s;
+  -moz-transition: height 0.35s, visibility 0.35s;
+  -o-transition: height 0.35s, visibility 0.35s;
+  transition: height 0.35s, visibility 0.35s;
+}
+
+/* line 54, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.panel-heading.open .glyphicon-chevron-down {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 58, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* line 63, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+label[for="nav-trigger"], .search-trigger {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  visibility: visible;
+}
+
+@media (min-width: 720px) {
+  /* line 63, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+  label[for="nav-trigger"], .search-trigger {
+    visibility: hidden;
+  }
+}
+
+/* line 72, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+label[for="nav-trigger"] {
+  right: 15px;
+}
+
+/* line 75, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-icon1 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 79, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-icon1 span {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* line 88, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+/* line 91, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+/* line 94, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+/* line 99, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked + label span:nth-child(1) {
+  background: white;
+  top: 10px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* line 104, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 107, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked + label span:nth-child(3) {
+  background: white;
+  top: 10px;
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+/* line 113, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger + label, .main-container, .main-container:after {
+  -webkit-transition: right 0.2s, visibility 0.2s;
+  -moz-transition: right 0.2s, visibility 0.2s;
+  -o-transition: right 0.2s, visibility 0.2s;
+  transition: right 0.2s, visibility 0.2s;
+}
+
+/* line 116, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked + label {
+  position: fixed;
+  right: 215px;
+}
+
+/* line 120, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked ~ .search-trigger {
+  visibility: hidden;
+}
+
+/* line 123, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked ~ .main-container {
+  right: 200px;
+}
+
+/* line 126, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.nav-trigger:checked ~ .main-container:after {
+  visibility: visible;
+}
+
+/* line 129, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.search-trigger {
+  margin-left: 15px;
+}
+
+/* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.search-trigger.active {
+  right: 12px;
+}
+
+/* line 136, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+span .search-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+/* line 141, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.close-search-icon {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 145, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.close-search-icon span {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  left: 0;
+  top: 9px;
+}
+
+/* line 153, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.close-search-icon span:nth-child(1) {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* line 156, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.close-search-icon span:nth-child(2) {
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+/* line 162, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.search-trigger.active .search-icon {
+  display: none;
+}
+
+/* line 165, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_mob-nav.scss */
+.search-trigger.active .close-search-icon {
+  opacity: 1;
+  z-index: 101;
+}
+
 /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_forms.scss */
 .header__search-form {
   position: absolute;
   top: -50px;
   opacity: 0;
-  z-index: 100;
+  z-index: 101;
   background: white;
   height: 60px;
 }
@@ -1153,366 +2493,7 @@ button .search-icon:hover {
   padding: 10px 10px 5px;
 }
 
-/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-footer {
-  background: #A6CAF0;
-  clear: both;
-  margin: 0;
-  padding-top: 20px;
-  position: relative;
-  bottom: 0;
-  min-height: 150px;
-}
-
-/* line 10, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-footer .footer-c1 {
-  padding: 2%;
-  float: none;
-  width: auto;
-}
-
-@media (min-width: 720px) {
-  /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  footer {
-    padding-top: 0;
-  }
-  /* line 17, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  footer .footer-c1 {
-    float: left;
-    width: 33.3333333%;
-  }
-}
-
-/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-.footer-r1 {
-  position: relative;
-  min-height: 200px;
-}
-
-@media (min-width: 720px) {
-  /* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  .footer-r1 {
-    min-height: 100px;
-  }
-}
-
-/* line 30, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-.footer__logo-wraper {
-  padding: 2%;
-  position: absolute;
-  top: 110px;
-  left: 0;
-  text-align: center;
-}
-
-@media (min-width: 720px) {
-  /* line 30, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  .footer__logo-wraper {
-    position: relative;
-    top: 0;
-  }
-}
-
-/* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-#footer__logo {
-  display: inline-block;
-  margin: 4%;
-  width: 125px;
-}
-
-@media (min-width: 720px) {
-  /* line 41, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  #footer__logo {
-    display: inline;
-    margin: 2%;
-    width: 150px;
-  }
-}
-
-/* line 51, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-.footer__nav {
-  border-left: none;
-  border-right: none;
-  height: 110px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
-  width: 100%;
-}
-
-@media (min-width: 720px) {
-  /* line 51, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  .footer__nav {
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    height: auto;
-    position: relative;
-  }
-}
-
-/* line 67, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-.share42init {
-  padding: 0;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 50%;
-}
-
-@media (min-width: 720px) {
-  /* line 67, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-  .share42init {
-    padding: 4% 2%;
-    position: relative;
-    left: 0;
-  }
-}
-
-/* line 80, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_footer.scss */
-#copyright {
-  clear: both;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.main h1::before, .main h1::after {
-  content: '';
-  background-color: #204080;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-}
-
-/* line 11, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.main h1 {
-  color: #204080;
-  font-size: 250%;
-  line-height: 1.5em;
-  text-align: center;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
-  position: relative;
-  max-width: 80%;
-  margin: 2% auto;
-}
-
-/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.main h1::after {
-  top: auto;
-  bottom: 0;
-}
-
-@media (min-width: 720px) {
-  /* line 11, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .main h1 {
-    font-size: 300%;
-    max-width: 100%;
-  }
-}
-
-/* main content */
-/* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.begin-journey {
-  background: url("../images/content/main-page/gohffgwydnm-paul-green.jpg") 50% 90% / 100% no-repeat;
-  color: white;
-  width: 100%;
-  min-height: 300px;
-  max-height: 1080px;
-  max-width: 1920px;
-  font-size: 1.7rem;
-  text-align: center;
-  margin: 5% auto;
-}
-
-/* line 47, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.begin-journey__content {
-  margin: 0;
-  padding: 12% 0;
-  min-width: 320px;
-  text-align: center;
-}
-
-/* line 52, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.begin-journey__content__text {
-  text-shadow: 1px 2px black;
-}
-
-/* line 55, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.begin-journey__content__btn {
-  font-size: 15px;
-  display: block;
-  margin: 25px auto;
-  padding: 10px;
-  width: 180px;
-}
-
-@media (min-width: 720px) {
-  /* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .begin-journey {
-    background: url("../images/content/main-page/road-photo.jpg") 50% 50% / cover no-repeat;
-    font-size: 2.75rem;
-  }
-  /* line 66, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .begin-journey__content {
-    margin: 0 15%;
-    padding: 8% 0;
-  }
-  /* line 69, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .begin-journey__content__btn {
-    font-size: 22.5px;
-    margin: 33.3px auto;
-    width: 250px;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .begin-journey {
-    font-size: 3.5rem;
-  }
-  /* line 78, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .begin-journey__content__btn {
-    font-size: 30px;
-    margin: 50px auto;
-    width: 300px;
-  }
-}
-
-/* Map section */
-/* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.map {
-  display: none;
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-}
-
-/* line 92, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.map h1, .map h1::before, .map h1::after, .map__frame {
-  width: 100%;
-}
-
-/* line 95, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.map__frame {
-  min-height: 500px;
-  border: 0;
-}
-
-@media (min-width: 1200px) {
-  /* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .map {
-    display: block;
-  }
-}
-
-/* line 104, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-#iw_container {
-  font-family: "PT Sans", Helvetica, sans-serif;
-}
-
-/* line 107, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.iw_title {
-  color: #204080;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* line 112, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.iw_content {
-  text-align: left;
-}
-
-/* line 114, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.iw_content a {
-  color: #007f7f;
-  font-size: 1.15rem;
-}
-
-/* line 119, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.iw_img {
-  margin-right: 15px;
-  vertical-align: middle;
-}
-
-/* Articles section */
-/* line 125, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.main-articles {
-  background: #007f7f;
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 25px;
-  padding-top: 15px;
-}
-
-/* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.main-articles h1::before, .main-articles h1::after {
-  width: 100%;
-}
-
-@media (min-width: 720px) {
-  /* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .main-articles h1::before, .main-articles h1::after {
-    width: 80%;
-  }
-}
-
-/* line 138, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.art-box {
-  display: inline-block;
-  margin: 10px 0;
-  position: relative;
-  height: auto;
-  width: 100%;
-  text-align: center;
-  vertical-align: top;
-}
-
-/* line 146, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.art-box__img {
-  width: 99%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  position: relative;
-  top: 0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-@media (min-width: 720px) {
-  /* line 138, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .art-box {
-    margin: 10px 20px;
-    height: 400px;
-    width: 400px;
-  }
-  /* line 159, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-  .art-box__img {
-    width: 400px;
-    height: 300px;
-  }
-}
-
-/* line 165, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.art__ref {
-  text-decoration: none;
-  color: #A6CAF0;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0 2%;
-}
-
-/* line 171, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
-.art__ref:hover {
-  color: #204080;
-}
-
-/* Subscribe section */
-/* line 177, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
 .subscribe {
   background: url("../images/content/main-page/subscribe.png") 50% 50% / cover no-repeat;
   color: white;
@@ -1525,7 +2506,7 @@ footer .footer-c1 {
   width: 100%;
 }
 
-/* line 187, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+/* line 12, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
 .subscribe__text {
   font-size: 150%;
   text-shadow: 1px 2px black;
@@ -1534,14 +2515,14 @@ footer .footer-c1 {
   width: 85%;
 }
 
-/* line 194, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+/* line 19, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
 .subscribe__form {
   display: inline-block;
   min-width: 300px;
   width: 85%;
 }
 
-/* line 198, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+/* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
 .subscribe__form input[type="email"] {
   font-family: "PT Sans", Helvetica, sans-serif;
   display: inline-block;
@@ -1550,7 +2531,7 @@ footer .footer-c1 {
   width: 95%;
 }
 
-/* line 205, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+/* line 30, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
 .subscribe__form button {
   font: 700 1.2rem "PT Sans", Helvetica, sans-serif;
   display: block;
@@ -1561,87 +2542,32 @@ footer .footer-c1 {
 }
 
 @media (min-width: 720px) {
-  /* line 177, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
   .subscribe {
     padding: 5% 12%;
     text-align: left;
   }
-  /* line 217, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  /* line 42, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
   .subscribe__text {
     display: block;
     min-width: 360px;
     width: 45%;
   }
-  /* line 222, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  /* line 47, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
   .subscribe__form {
     min-width: 360px;
     width: 45%;
   }
-  /* line 225, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  /* line 50, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
   .subscribe__form input[type="email"] {
     width: 190px;
   }
-  /* line 228, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_main-page.scss */
+  /* line 53, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_subscribe.scss */
   .subscribe__form button {
     display: inline-block;
     margin: 0;
     width: 145px;
   }
-}
-
-/* line 5, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place .main-container {
-  text-align: center;
-}
-
-/* line 8, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place .content {
-  color: #555;
-  margin: 30px auto;
-  max-width: 1600px;
-}
-
-/* line 13, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place h1 {
-  font-size: 300%;
-  margin-bottom: 2.25rem;
-}
-
-/* line 17, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place h2 {
-  font-size: 200%;
-  margin-bottom: 1.25rem;
-}
-
-/* line 21, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place p, .place .content li {
-  text-align: left;
-}
-
-@media (min-width: 720px) {
-  /* line 25, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .place .main-container {
-    text-align: left;
-  }
-  /* line 28, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .place h2 {
-    font-size: 250%;
-  }
-}
-
-/* line 36, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__header {
-  background: url("../images/content/places/mie/teaser.jpg") 50% 50% / cover no-repeat;
-  clear: both;
-  height: 500px;
-  padding: 10px 10%;
-  color: white;
-}
-
-/* line 42, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__header a {
-  color: white;
-  text-decoration: none;
 }
 
 /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_breadcrumb.scss */
@@ -1687,33 +2613,6 @@ footer .footer-c1 {
   .breadcrumb {
     visibility: visible;
   }
-}
-
-/* line 49, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__header__place-parent {
-  font-size: 150%;
-}
-
-/* line 53, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__wrapper {
-  float: left;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 95%;
-}
-
-@media (min-width: 1200px) {
-  /* line 53, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .content__wrapper {
-    margin-right: 0;
-    width: 65%;
-  }
-}
-
-/* line 64, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__main-info {
-  float: left;
-  width: 100%;
 }
 
 /* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_tabs.scss */
@@ -1932,87 +2831,19 @@ footer .footer-c1 {
   background: #c7e6aa;
 }
 
-/* What to do tab */
-/* line 74, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do {
-  position: relative;
-  vertical-align: middle;
-}
-
-/* line 77, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-item {
-  height: 400px;
-  width: 100%;
-  display: inline-block;
-  position: relative;
-  top: 0;
-  left: 0;
-  text-align: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* line 87, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-item:hover .what-to-do__txt {
-  opacity: 1;
-}
-
-/* line 90, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do__txt {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  z-index: 0;
-  transition: opacity 0.4s;
-}
-
-@media (min-width: 720px) {
-  /* line 104, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .what-to-do-item {
-    height: 275px;
-    width: 49%;
-  }
-}
-
-/* line 110, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-1 {
-  background: url("../images/content/places/mie/grand-shrine-of-ise_1.jpg") 50% 50% / cover no-repeat;
-}
-
-/* line 113, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-2 {
-  background: url("../images/content/places/mie/iga045.jpg") 50% 50% / cover no-repeat;
-}
-
-/* line 116, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-3 {
-  background: url("../images/content/places/mie/meoto-iva-003.jpg") 50% 50% / cover no-repeat;
-}
-
-/* line 119, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.what-to-do-4 {
-  background: url("../images/content/places/mie/japan.jpg") 50% 50% / cover no-repeat;
-}
-
-/* Photo tab */
-/* line 2, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 3, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel {
   position: relative;
 }
 
-/* line 4, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 5, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-/* line 8, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 9, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .item {
   position: relative;
   display: none;
@@ -2022,21 +2853,21 @@ footer .footer-c1 {
   transition: 0.6s ease-in-out left;
 }
 
-/* line 12, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 13, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .item > img {
   line-height: 1;
   width: 100%;
   height: auto;
 }
 
-/* line 18, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 19, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner h3 {
   font-size: 1.2rem;
   text-shadow: 1px 2px 3px black;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
-  /* line 23, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 24, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-inner > .item {
     -webkit-transition: 0.6s ease-in-out;
     -moz-transition: 0.6s ease-in-out;
@@ -2053,7 +2884,7 @@ footer .footer-c1 {
     -o-perspective: 1000px;
     perspective: 1000px;
   }
-  /* line 27, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 28, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-inner > .item.next, .carousel-inner > .item.active.right {
     left: 0;
     -webkit-transform: translate3d(100%, 0, 0);
@@ -2062,7 +2893,7 @@ footer .footer-c1 {
     -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
-  /* line 32, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 33, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
     left: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -2071,7 +2902,7 @@ footer .footer-c1 {
     -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
-  /* line 37, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 38, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
@@ -2082,21 +2913,21 @@ footer .footer-c1 {
   }
 }
 
-/* line 45, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 46, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .active,
 .carousel-inner > .next,
 .carousel-inner > .prev {
   display: block;
 }
 
-/* line 50, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 51, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .active,
 .carousel-inner > .next.left,
 .carousel-inner > .prev.right {
   left: 0;
 }
 
-/* line 55, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 56, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .next,
 .carousel-inner > .prev {
   position: absolute;
@@ -2104,19 +2935,19 @@ footer .footer-c1 {
   width: 100%;
 }
 
-/* line 61, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 62, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .next,
 .carousel-inner > .active.right {
   left: 100%;
 }
 
-/* line 65, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 66, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-inner > .prev,
 .carousel-inner > .active.left {
   left: -100%;
 }
 
-/* line 72, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 73, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control {
   position: absolute;
   top: 0;
@@ -2131,7 +2962,7 @@ footer .footer-c1 {
   opacity: .5;
 }
 
-/* line 84, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 85, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control.left {
   background-image: -owg-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -2142,7 +2973,7 @@ footer .footer-c1 {
   background-repeat: repeat-x;
 }
 
-/* line 89, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 90, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control.right {
   right: 0;
   left: auto;
@@ -2155,7 +2986,7 @@ footer .footer-c1 {
   background-repeat: repeat-x;
 }
 
-/* line 96, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 97, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control:hover, .carousel-control:focus {
   color: #fff;
   text-decoration: none;
@@ -2164,7 +2995,7 @@ footer .footer-c1 {
   opacity: .9;
 }
 
-/* line 104, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 105, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
@@ -2176,21 +3007,21 @@ footer .footer-c1 {
   margin-top: -10px;
 }
 
-/* line 114, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 115, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
   margin-left: -10px;
 }
 
-/* line 119, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 120, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
   right: 50%;
   margin-right: -10px;
 }
 
-/* line 124, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 125, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
   width: 20px;
@@ -2199,17 +3030,17 @@ footer .footer-c1 {
   line-height: 1;
 }
 
-/* line 131, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 132, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
 
-/* line 134, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 135, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-control .icon-next:before {
   content: '\203a';
 }
 
-/* line 139, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 140, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -2222,7 +3053,7 @@ footer .footer-c1 {
   list-style: none;
 }
 
-/* line 149, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 150, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -2236,7 +3067,7 @@ footer .footer-c1 {
   border-radius: 10px;
 }
 
-/* line 161, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 162, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -2244,7 +3075,7 @@ footer .footer-c1 {
   background-color: #fff;
 }
 
-/* line 168, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+/* line 169, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -2259,7 +3090,7 @@ footer .footer-c1 {
 }
 
 @media screen and (min-width: 720px) {
-  /* line 182, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 183, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel .glyphicon-chevron-left,
   .carousel .glyphicon-chevron-right,
   .carousel .icon-prev,
@@ -2269,245 +3100,101 @@ footer .footer-c1 {
     margin-top: -10px;
     font-size: 30px;
   }
-  /* line 191, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 192, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel .glyphicon-chevron-left,
   .carousel .icon-prev {
     margin-left: -10px;
   }
-  /* line 195, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 196, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel .glyphicon-chevron-right,
   .carousel .icon-next {
     margin-right: -10px;
   }
-  /* line 199, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 200, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-caption {
     right: 20%;
     left: 20%;
     padding-bottom: 30px;
   }
-  /* line 204, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 205, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-inner h3 {
     font-size: 2rem;
   }
-  /* line 207, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+  /* line 208, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
   .carousel-indicators {
     bottom: 20px;
   }
 }
 
-/* Content details */
-/* line 127, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__details {
-  width: 100%;
-}
-
-/* line 130, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place-advice__main {
-  margin-bottom: 50px;
-}
-
-/* line 133, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place-advice__note,
-.place-advice__main img {
-  float: none;
-  margin: 0 5px 10px;
-  width: 90%;
-}
-
-@media (min-width: 720px) {
-  /* line 133, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .place-advice__note,
-  .place-advice__main img {
-    float: right;
-    margin: 0 0 0 20px;
-    width: 40%;
-  }
-}
-
-/* line 144, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place-advice__note {
-  font-size: 0.9rem;
-}
-
-/* line 146, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.place-advice__note h3 {
-  background: #204080;
-  padding: 10px;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-/* Aside */
-/* line 158, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__right-aside {
-  display: none;
-  float: right;
-  margin-right: 5%;
-  padding: 20px;
-  position: relative;
-  width: 25%;
-  text-align: center;
-}
-
-/* line 166, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__right-aside a {
-  display: block;
-  margin: 20px 5px;
-  color: #007f7f;
-  text-decoration: none;
-}
-
-/* line 171, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.content__right-aside a:hover {
-  color: rgba(0, 127, 127, 0.9);
-}
-
-@media (min-width: 1200px) {
-  /* line 158, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-  .content__right-aside {
-    display: block;
-  }
-}
-
-/* line 179, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.aside__articles__links {
-  margin: 30px 5px;
-  position: relative;
-}
-
-/* line 182, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.aside__articles__links::after {
-  content: "";
-  margin: 0 auto;
+/* line 217, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-arrow {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: auto;
-  bottom: -40px;
-  height: 1px;
-  width: 90%;
-  background: #ccc;
-}
-
-/* line 195, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.aside__other-places {
-  margin: 90px 10px;
-}
-
-/* line 197, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.aside__other-places a {
-  margin-bottom: 30px;
-}
-
-/* line 200, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-.aside__other-places img {
-  display: block;
-  margin: auto;
-  width: 250px;
-}
-
-/* line 206, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-a.aside__other-places__img {
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* line 213, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-a.aside__other-places__txt {
-  margin-top: 5px;
-}
-
-/* line 216, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-a.aside__other-places__btn {
-  background: transparent;
-  border: 1px solid #0094ff;
-  border-radius: 5px;
-  height: 30px;
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px;
-  color: #0094ff;
-}
-
-/* line 225, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_place-page.scss */
-a.aside__other-places__btn:hover {
-  background: transparent;
-  border: 1px solid #204080;
-  color: #204080;
-}
-
-/* line 4, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__content a {
-  text-decoration: none;
-}
-
-/* line 9, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__content .carousel-control {
-  opacity: 0;
-  z-index: -1;
-}
-
-/* line 13, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__header {
-  height: 830px;
-  margin-top: 20px;
+  top: 36%;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: white;
   overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-/* line 19, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__header h1 {
-  top: 300px;
-  font-size: 120px;
-  font-weight: 700;
-}
-
-/* line 24, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__header .carousel-caption {
-  top: 420px;
-  font-style: italic;
-}
-
-/* line 29, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__header,
-.country__breadcrumb {
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-/* line 34, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__header h1,
-.country__breadcrumb,
-.country__header .carousel-caption {
-  position: absolute;
-  right: 15%;
-  left: 15%;
+  cursor: pointer;
+  font-family: 'Glyphicons Halflings';
   z-index: 10;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
-/* line 43, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country__breadcrumb {
-  top: 260px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
+/* line 229, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-arrow:hover, .slick-arrow:focus {
+  color: #0094ff;
+  outline: 0;
 }
 
-/* line 49, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/layout/_country-page.scss */
-.country-cities__btn {
+/* line 233, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-arrow::before {
+  content: '';
   position: absolute;
-  top: 500px;
-  left: 46%;
-  z-index: 10;
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-color: inherit;
+}
+
+/* line 242, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-arrow::after {
+  position: absolute;
+  top: 1rem;
+  left: .3rem;
+  width: inherit;
+  height: inherit;
+}
+
+/* line 249, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-prev {
+  left: -.3rem;
+}
+
+/* line 251, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-prev::after {
+  content: '\e079';
+}
+
+/* line 255, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-next {
+  right: -.3rem;
+}
+
+/* line 257, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-next::after {
+  content: '\e080';
+}
+
+/* line 261, C:/Users/mak/Documents/WEB-Dev/Project Places/public/assets/scss/components/_carousel.scss */
+.slick-disabled {
+  z-index: -1;
 }
 
 /*# sourceMappingURL=../css/main-style.map */

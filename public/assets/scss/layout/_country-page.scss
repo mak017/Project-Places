@@ -1,8 +1,11 @@
 // COUNTRY PAGE
 
-// General 
-.country__content a {
-    text-decoration: none;
+// General
+.country__content {
+    color: $font-color;
+    a {
+        text-decoration: none;
+    }
 }
 
 // Carousel
@@ -11,7 +14,8 @@
     z-index: -1;
 }
 .country__header {
-    height: 830px;
+    height: 90vh;
+    max-height: 80rem;
     margin-top: 20px;
     overflow: hidden;
     position: relative;
@@ -29,7 +33,7 @@
 .country__header,
 .country__breadcrumb {
     color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: 0 1px 2px opacify($grey, .2);
 } 
 .country__header h1,
 .country__breadcrumb,
@@ -44,15 +48,301 @@
     top: 260px;
     font-size: 1.4rem;
     text-transform: uppercase;
+    
+    a {
+        color: inherit;
+    }
 }
 
 .country-cities__btn {
     position: absolute;
     top: 500px;
-    left: 46%;
+    left: calc(50% - 60px);
+    width: 120px;
     z-index: 10;
     padding: 10px 15px;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font: 700 1.1rem $main-font;
     text-transform: uppercase;
+    outline: 0;
+    .glyphicon-chevron-down {
+        left: 4px;
+        font-size: 12px;
+        margin-top: 4px;
+        float: right;
+        color: inherit;
+    }
+}
+
+// Top cities
+.top-cities {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100vh;
+    width: 100%;
+    background: white;
+    opacity: 0;
+    @include transition(bottom .4s, opacity .4s);
+
+    &_visible {
+        bottom: 0;
+        opacity: 1;
+        z-index: 9999;
+    }
+    &_visible &__close {
+        top: -7.2rem;
+        @include transition(top .4s .7s, opacity .4s .7s);
+        span {
+            position: absolute;
+            @include box(2.5rem, 3px);
+            background: opacify($grey, .3);
+            left: 1.3rem;
+            &:nth-child(1) {
+                @include transform(rotate(225deg));
+            }
+            &:nth-child(2) {
+                @include transform(rotate(-225deg));
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 2.5rem);
+        cursor: pointer;
+        outline: 0;
+        z-index: 9998;
+        @include box(5rem);
+        border: 0;
+        border-radius: 50%;
+        background: white;
+    }
+    &__content {
+        position: relative;
+        background: white;
+        z-index: 9999;
+    }
+    &__wrap {
+        @include display-flex;
+        @include justify-content(center);
+        width: inherit;
+        padding: 4rem 6rem 6rem;
+    }
+}
+.top-list {
+    width: 100%;
+    max-width: 35rem;
+    counter-reset: top-list;
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__content {
+        position: relative;
+        padding-right: 45%;
+    }
+    &__three__item {
+        height: $top-list-icon-height;
+        margin-bottom: 10px;
+    }
+    a {
+        position: relative;
+    }
+    &__three__link {
+        display: block;
+        height: inherit;
+        padding-left: 8rem;
+        @include link;
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include box($top-list-icon-width, $top-list-icon-height);
+    }
+    &__three__item:nth-of-type(1) &__icon {
+        @include background('../images/content/places/tokyo/tokyo-icon.jpg');
+    }
+    &__three__item:nth-of-type(2) &__icon {
+        @include background('../images/content/places/kyoto/kyoto-icon.jpg');
+    }
+    &__three__item:nth-of-type(3) &__icon {
+        @include background('../images/content/places/osaka/osaka-icon.jpg');
+    }
+    &__marker {
+        top: $top-list-icon-height/2 - $top-list-marker-size/2;
+        left: $top-list-icon-width - $top-list-marker-size/2;
+        @include box($top-list-marker-size);
+        font-size: 1rem;
+        @include marker-counter(absolute, top-list);
+    }
+    &__title {
+        padding-top: 1rem;
+    }
+    &__subtitle {
+        color: $grey;
+    }
+    &__others {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include box(30%, $top-list-icon-height*3 + 30px);
+        font-size: .8rem;
+        
+        li {
+            position: relative;
+            padding-bottom: 1.3rem;
+            &::before {
+                content: counter(top-list) ".";
+                counter-increment: top-list;
+                position: absolute;
+                top: -.1rem;
+                left: -2rem;
+                color: $grey;
+                font: .8rem $secondary-font;
+            }
+        }
+        &__link {
+            @include link;
+        }
+    }
+    &__more {
+        display: block;
+        margin-top: 15px;
+        @include link-upper-chevron-right;
+    }
+}
+
+// Page navigation
+
+.sub-nav {
+    @include display-flex;
+    height: 5rem;
+    @include block;
+    &__wrap {
+        @include block-wrap;
+    }
+    &__list {
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        height: 100%;
+    }
+    li {
+        padding: 0 1.5rem;
+        text-align: center;
+        white-space: nowrap;
+        
+        a {
+            @include link;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Intro
+
+.intro {
+    @include block;
+    text-align: center;
+    &__wrap {
+        @include block-wrap;
+        padding: $block-padding-top 5rem;
+    }
+    & &__header {
+        @include heading-red-stripe;
+    }
+    & &__text {
+        max-width: 86%;
+        margin: 0 auto 5rem;
+        font-size: 1.2rem;
+        text-align: inherit;
+        >span {
+            font-style: italic;
+        }
+        a {
+            font-size: 1rem;
+            @include link-upper-chevron-right;
+        }
+    }
+    &__author {
+        display: inline-block;
+        @include link;
+        &__img {
+            @include box(80px);
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            @include transition(transform .4s);
+        }
+        &:hover img {
+            @include transform(scale(1.1));
+        }
+        &__credits__name {
+            text-transform: uppercase;
+        }
+        &__credits__profession {
+            font-style: italic;
+            color: $grey;
+        }
+    }
+}
+
+// Experiences
+.experiences {
+    @include block;
+    &__wrap {
+        padding: $block-padding-top 0;
+    }
+    & &__header {
+        @include heading-red-stripe;
+        
+    }
+    &__carousel {
+        margin: 0 -.4%;
+    }
+    &__list {
+        margin: 0 -.4%;
+        counter-reset: top-experiences;
+    }
+    &__item {
+        width: 23.5%;
+        margin: 0 .4%;
+    }
+    .image-card {
+        position: relative;
+        display: block;
+        width: 100%;
+        &__image {
+            padding-top: 150%;
+        }
+        &__description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            min-height: 8rem;
+            padding: 0 1.2rem 1.8rem;
+            @include background-image(linear-gradient(0deg, opacify($grey, 0.1) 0, transparent));
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &__marker {
+            @include box($top-experiences-marker-size);
+            margin: 1rem auto;
+            color: $font-color;
+            font-size: 1.6rem;
+            line-height: $top-experiences-marker-size;
+            @include marker-counter(relative, top-experiences);
+        }
+        &__subtitle {
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    }
+    &__item:nth-of-type(1) .image-card__image {
+        @include background('../images/content/countries/japan/96681879.jpg');
+    }
 }

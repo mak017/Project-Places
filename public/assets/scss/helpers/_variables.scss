@@ -1,17 +1,30 @@
 // Fonts
 $main-font: 'PT Sans', Helvetica, sans-serif;
+$secondary-font: Georgia, Times, 'Times New Roman', serif;
 
 // Colors
 $main-blue: rgb(0, 148, 255);
 $main-green: rgb(0, 127, 127);
+$font-color: #3b444f;
 $dark-blue: #204080;
 $light-blue: #A6CAF0;
 $subduedgray: #dbe6ec;
 $softblue: #8abee5;
 $softgreen: #c7e6aa;
+$grey: rgba(0, 0, 0, .4);
 
-// Sizes
+// Sizes and dimensions
 $medium-screen: 720px;
 $large-screen: 1200px;
+
 $max-page-width: 1600px;
+
 $search-icon-size: 25px;
+
+$top-list-icon-width: 100px;
+$top-list-icon-height: 67px;
+$top-list-marker-size: 25px;
+$top-experiences-marker-size: 2.8rem;
+
+$block-padding-top: 10rem;
+$heading-after-red: 3rem;
