@@ -34,7 +34,7 @@ places = [{
         img: "assets/images/content/places/dublin/dublin-icon.png",
         url: "#",
         lat: 53.34250,
-        lng: -6.26583    
+        lng: -6.26583
     },
     {
         place: "Джорджтаун",
@@ -48,9 +48,15 @@ places = [{
 ]
 
 
+
+
+
 // JQuery
 
 $(document).ready(function() {
+
+   
+
 
     // Typeahead search
 
@@ -105,6 +111,14 @@ $(document).ready(function() {
         slidesToScroll: 4
     });
 });
+
+// Tabs on place page
+$('#myTab a[href="#main-info"]').tab('show')
+$('#myTab a[href="#when"]').tab('show')
+$('#myTab a[href="#how"]').tab('show')
+$('#myTab a[href="#hotels"]').tab('show')
+$('#myTab a[href="#what-to-do"]').tab('show')
+$('#myTab a[href="#photo"]').tab('show')
 
 
 // Vanilla Javascript

@@ -322,7 +322,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            min-height: 8rem;
+            min-height: 11rem;
             padding: 0 1.2rem 1.8rem;
             @include background-image(linear-gradient(0deg, opacify($grey, 0.1) 0, transparent));
             color: white;
@@ -341,8 +341,72 @@
             font-size: 0.9rem;
             font-style: italic;
         }
+        &__title {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.1em;
+            text-transform: uppercase;
+        }
     }
     &__item:nth-of-type(1) .image-card__image {
         @include background('../images/content/countries/japan/96681879.jpg');
+    }
+    &__item:nth-of-type(2) .image-card__image {
+        @include background('../images/content/countries/japan/antonina-bukowska-140309.jpg');
+    }
+    &__item:nth-of-type(3) .image-card__image {
+        @include background('../images/content/countries/japan/GettyImages-173253572_super.jpg');
+    }
+    &__item:nth-of-type(4) .image-card__image {
+        @include background('../images/content/countries/japan/148913389_full.jpg');
+    }
+    &__item:nth-of-type(5) .image-card__image {
+        @include background('../images/content/countries/japan/Nakasendo_between_Tsumago_and_Magome_-_Nov_2005.jpg');
+    }
+    &__item:nth-of-type(6) .image-card__image {
+        @include background('../images/content/countries/japan/af49aa71df91ddc42495cdfc0c75f833-todai-ji.jpg');
+    }
+    &__item:nth-of-type(7) .image-card__image {
+        @include background('../images/content/countries/japan/497079645_super.jpg');
+    }
+    &__item:nth-of-type(8) .image-card__image {
+        @include background('../images/content/countries/japan/Asashoryu_fight_Jan08.jpg');
+    }
+    &__item:nth-of-type(9) .image-card__image {
+        @include background('../images/content/countries/japan/38553070.jpg');
+    }
+    &__item:nth-of-type(10) .image-card__image {
+        @include background('../images/content/countries/japan/604dd05340fc057286ef8c795f9be58b-naoshima.jpg');
+    }
+    &__item:nth-of-type(11) .image-card__image {
+        @include background('../images/content/countries/japan/CA25843_full.jpg');
+    }
+    &__item:nth-of-type(12) .image-card__image {
+        @include background('../images/content/countries/japan/436161016_1280x720.jpg');
+    }
+    &__item:nth-of-type(13) .image-card__image {
+        @include background('../images/content/countries/japan/3741881483_f75daf1ebe_b.jpg');
+    }
+    &__item:nth-of-type(14) .image-card__image {
+        @include background('../images/content/countries/japan/300086a55082864349d99e09747e0445-sapporo-hokkaido.jpg');
+    }
+    &__item:nth-of-type(15) .image-card__image {
+        @include background('../images/content/countries/japan/Fusaki-Beach_Ishigaki_Okinawa_Japan.jpg');
+    }
+    &__item:nth-of-type(16) .image-card__image {
+        @include background('../images/content/countries/japan/62dbe2f9590290266d37dadc23b572e0-dotombori-arcade.jpg');
+    }
+    &__item:nth-of-type(17) .image-card__image {
+        @include background('../images/content/countries/japan/GettyImages-sb10066488ak-001_super.jpg');
+    }
+    &__item:nth-of-type(18) .image-card__image {
+        @include background('../images/content/countries/japan/558228493_master.jpg');
+    }
+    &__item:nth-of-type(19) .image-card__image {
+        @include background('../images/content/countries/japan/520847505_master.jpg');
+    }
+    &__item:nth-of-type(20) .image-card__image {
+        @include background('../images/content/countries/japan/GettyImages-109355465_super.jpg');
     }
 }

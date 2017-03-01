@@ -9,14 +9,41 @@
     <link rel="stylesheet" href="assets/css/main-style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/afe2d4ff4c.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="assets/js/share42.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/place.js"></script>
+    
+    <script src="assets/js/script.js/src/script.js"></script>
+    <script>
+        $script.ready('jquery', function() {
+      console.log('jquery is ready');
+    })
+      .ready('typeahead', function() {
+        console.log('typeahead is ready');
+      })
+      .ready(['jquery', 'bootstrap'], function() {
+        console.log('jquery and bootstrap are ready');
+      })
+      .ready(['jquery', 'slick'], function() {
+        console.log('jquery and slick are ready');
+      })
+      .ready('share42', function() {
+        console.log('share42 is ready');
+      })
+      .ready(['jquery', 'typeahead', 'slick', 'main'], function() {
+        console.log('jquery and animation are both ready');
+      })
+
+    $script('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', 'jquery', function() {
+        $script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', 'bootstrap');
+        $script('https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js', 'typeahead');
+        $script('https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', 'slick', function() {
+            $script('assets/js/main.js', 'main');
+        });
+        
+    });
+
+    $script('assets/js/share42.js', 'share42');
+
+   
+    </script>
 </head>
 
 <body class="place country" data-spy="scroll" data-target=".sub-nav">
@@ -270,176 +297,216 @@
                                 <div class="image-card__description">
                                     <div class="image-card__marker"></div>
                                     <div class="image-card__subtitle">Киото</div>
-                                    <h3>Храмы и сады Киото</h3>
+                                    <h3 class="image-card__title">Храмы и сады Киото</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>2</div>
-                                    <div>Южная Хигасияма</div>
-                                    <h3>Любование цветением вишни (ханами)</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Южная Хигасияма</div>
+                                    <h3 class="image-card__title">Любование цветением вишни (ханами)</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>3</div>
-                                    <div>Токио</div>
-                                    <h3>Современная архитектура Токио</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Токио</div>
+                                    <h3 class="image-card__title">Современная архитектура Токио</h3>
                                 </div>
                             </a>
                             </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>4</div>
-                                    <div>Коя-Сан</div>
-                                    <h3>Окуноин на горе Коя-Сан</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Коя-Сан</div>
+                                    <h3 class="image-card__title">Окуноин на горе Коя-Сан</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>5</div>
-                                    <div>Япония</div>
-                                    <h3>Цумаго и Магоме</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Цумаго и Магоме</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>6</div>
-                                    <div>Нара</div>
-                                    <h3>Дайбуцу (Великий Будда) Нары</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Нара</div>
+                                    <h3 class="image-card__title">Дайбуцу (Великий Будда) Нары</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>7</div>
-                                    <div>Япония</div>
-                                    <h3>Хиросима</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Хиросима</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>8</div>
-                                    <div>Гиндза и Цукидзи</div>
-                                    <h3>Сумо</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Гиндза и Цукидзи</div>
+                                    <h3 class="image-card__title">Сумо</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>9</div>
-                                    <div>Япония</div>
-                                    <h3>Гора Фудзи</h3>
+                                <div class="image-card__image">   
                                 </div>
-                            </a></li>
-                        <li class="experiences__item">
-                            <a class="image-card" href="#">
-                                <div>
-                                    <div>10</div>
-                                    <div>Япония</div>
-                                    <h3>Наосима</h3>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Гора Фудзи</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>11</div>
-                                    <div>Нисеко</div>
-                                    <h3>Катание на лыжах</h3>
+                                <div class="image-card__image">   
                                 </div>
-                            </a></li>
-                        <li class="experiences__item">
-                            <a class="image-card" href="#">
-                                <div>
-                                    <div>12</div>
-                                    <div>Япония</div>
-                                    <h3>Древние тропы паломничества</h3>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Наосима</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>13</div>
-                                    <div>Япония</div>
-                                    <h3>Канадзава</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Нисеко</div>
+                                    <h3 class="image-card__title">Катание на лыжах</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>14</div>
-                                    <div>Япония</div>
-                                    <h3>Дикий Хоккайдо</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Древние тропы паломничества</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>15</div>
-                                    <div>Япония</div>
-                                    <h3>Пляжи и леса Юго-западных островов</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Канадзава</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>16</div>
-                                    <div>Осака</div>
-                                    <h3>Городские пейзажи</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Дикий Хоккайдо</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>17</div>
-                                    <div>Южная Хигасияма</div>
-                                    <h3>Культура гейш Киото</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Пляжи и леса Юго-западных островов</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>18</div>
-                                    <div>Япония</div>
-                                    <h3>Камикочи</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Осака</div>
+                                    <h3 class="image-card__title">Городские пейзажи</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>19</div>
-                                    <div>Япония</div>
-                                    <h3>Миядзима</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Южная Хигасияма</div>
+                                    <h3 class="image-card__title">Культура гейш Киото</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="experiences__item">
                             <a class="image-card" href="#">
-                                <div>
-                                    <div>20</div>
-                                    <div>Харадзуку и Аояма</div>
-                                    <h3>Шоппинг в Токио</h3>
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Камикочи</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="experiences__item">
+                            <a class="image-card" href="#">
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Япония</div>
+                                    <h3 class="image-card__title">Миядзима</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="experiences__item">
+                            <a class="image-card" href="#">
+                                <div class="image-card__image">   
+                                </div>
+                                <div class="image-card__description">
+                                    <div class="image-card__marker"></div>
+                                    <div class="image-card__subtitle">Харадзуку и Аояма</div>
+                                    <h3 class="image-card__title">Шоппинг в Токио</h3>
                                 </div>
                             </a>
                         </li>

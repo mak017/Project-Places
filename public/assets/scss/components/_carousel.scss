@@ -216,7 +216,7 @@
 
 .slick-arrow {
     position: absolute;
-    top: 36%;
+    top: 43%;
     @include box(3rem);
     border: 0;
     border-radius: 50%;
@@ -242,18 +242,18 @@
     &::after {
         position: absolute;
         top: 1rem;
-        left: .3rem;
+        left: 0;
         @include box(inherit);
     }
 }
 .slick-prev {
-    left: -.3rem;
+    left: 0;
     &::after {
         content: '\e079';
     }
 }
 .slick-next {
-    right: -.3rem;
+    right: 0;
     &::after {
         content: '\e080';
     }
