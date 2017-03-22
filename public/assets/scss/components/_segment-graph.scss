@@ -9,12 +9,15 @@
     display: inline-block;
     height: 100%;
     vertical-align: top;
-    width: 7%;
+    width: 6%;
     &--1 .segment-graph__segment {
         border-radius: 4px 0 0 4px;
     }
     &--last .segment-graph__segment {
         border-radius: 0 4px 4px 0;
+    }
+    @include breakpoint($medium-screen) {
+        width: 7%;
     }
 }
 .segment-graph__segment {
@@ -32,13 +35,19 @@
     }
 }
 .segment-graph__label {
+    position: relative;
+    top: 5px;
+    left: 5px;
     font-size: 0.8rem;
     color: #99a9b3;
     height: 25%;
     font-weight: bold;
     text-align: center;
+    @include transform(rotate(-90deg));
     @include breakpoint($medium-screen) {
+        position: static;
         font-size: 0.93rem;
+        @include transform(rotate(0deg));
     }
 }
 .copy--h4 {

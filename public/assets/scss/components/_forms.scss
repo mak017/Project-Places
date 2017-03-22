@@ -45,7 +45,7 @@
     border: 1px solid transparent;
     border-radius: 5px;
     height: 43px;
-    width: 300px;
+    width: 100%;
     color: $main-green;
     font-family: $main-font;
     font-size: 25px;
@@ -83,6 +83,9 @@
     }
     &:focus:-ms-input-placeholder {
         @include focus-placeholder;
+    }
+    @include breakpoint($medium-screen) {
+        width: 300px;
     }
 }
 
